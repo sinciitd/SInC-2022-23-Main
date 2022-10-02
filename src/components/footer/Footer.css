@@ -1,0 +1,52 @@
+.footer {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(96, 114, 153);
+    overflow: auto;
+    display: flex;
+    align-items: center;
+}
+.footer-icon{
+    fill: white;
+}
+
+.foot-text {
+    color: white;
+    font-family: Poppins;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 400px;
+    margin: 10px;
+
+}
+
+.footer-icon {
+    height: 26px;
+    width: 30px;
+    margin: 10px;
+}
+
+.footer-right {
+    flex: 3;
+    display: flex;
+    justify-content: flex-end;
+
+
+}
+
+.footer-center {
+    flex: 6;
+    text-align: center;
+
+
+}
+
+.footer-left {
+    flex: 3;
+}
+
+@media (orientation: portrait) {
+    .footer {
+        display: none;
+    }
+}
