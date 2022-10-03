@@ -1,0 +1,140 @@
+.contact{
+    background-color: #607299;
+    padding: 50px;
+}
+
+.contactHeading{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 75px;
+    text-align: center;
+    color: #FFFFFF;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactHeadingUl{
+    margin-top: 30px;
+    margin-bottom: 60px;
+    width: 100px;
+}
+
+.contactContents{
+    display: flex;
+    align-items: center;
+}
+
+.contactForm{
+    flex: 1;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    margin-right: 30px;
+    padding: 35px;
+    height: fit-content;
+    font-family: 'Poppins';
+    font-style: normal;
+    /* font-weight: 400; */
+    /* font-size: 22px; */
+    /* line-height: 36px; */
+    text-align: justify;
+    color: #8E8E8E;
+}
+
+.contactFormInput{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+}
+
+.contactFormSubmit{
+    background-color: #405279;
+    color: white;
+    box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.31);
+    border-radius: 10px;
+    border: 0;
+}
+
+.contactIllustration{
+    flex: 1;
+    text-align: center;
+}
+
+.contactNums{
+    margin-top: 50px;
+    color:#FFFFFF;
+    font-family: 'Poppins';
+}
+
+.contactNumsHeading{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.contactNumsHeadingText{
+    margin-right: 10px;
+}
+
+.contactNumsList{
+    font-weight: 400;
+}
+
+.contactNumsItem{
+    margin-bottom: 5px;
+}
+
+.contactNumsItemText{
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .contactIllustrationImg{
+        width: 100%;
+    }
+
+    .contactHeadingUl{
+        margin-top: 20px;
+        width: 80px;
+    }
+    
+    .contactHeading{
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .contact{
+        padding: 25px;
+    }
+    
+    .contactHeading{
+        font-size: 30px;
+    }
+    
+    .contactHeadingUl{
+        width: 40px;
+        height: 1.25px;
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+
+    .contactContents{
+        flex-direction: column;
+    }
+
+    .contactForm{
+        margin-right: 0;
+        padding: 25px;
+        font-size: 14px;
+    }
+
+    .contactIllustrationImg{
+        display: none;
+    }
+}
