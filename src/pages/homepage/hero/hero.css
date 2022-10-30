@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+}
+
+.hero{
+    background-color: #607299;
+    background-image: url(./hero-hexagon-pattern.svg);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    min-height: 90vh;
+    padding-bottom: 50px;
+}
+
+.heroContents{
+    display: flex;
+    flex-direction: column;
+    padding-top: 40vh;
+    padding-left: 50px;
+}
+
+.heroHeading1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 75px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: auto;
+    width:fit-content;
+}
+
+.heroHeading2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+    color: #FFFFFF;
+    width: fit-content;
+}
+
+.heroReadMoreBtn{
+    background: #FFFF00;
+    box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.31);
+    border-radius: 10px;
+    margin: auto;
+    width: fit-content;
+    border: 0;
+}
+
+.heroReadMoreBtn:hover{
+    background-color: #d1d100;
+}
+
+.heroReadMoreBtnText, .heroReadMoreBtnText:hover{
+    display: inline-block;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    margin: 10px 20px;
+    color: #000000;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1280px) {
+.heroHeading1{
+    font-size: 45px;
+}
+
+.heroHeading2{
+    font-size: 35px;
+}
+
+.heroReadMoreBtnText{
+    font-size: 20px;
+}
+}
+
+@media only screen and (max-width: 1024px) {
+.heroHeading1{
+    font-size: 35px;
+    line-height: 60px;
+}
+
+.heroHeading2{
+    font-size: 25px;
+}
+
+.heroReadMoreBtnText{
+    font-size: 18px;
+}
+}
+
+@media only screen and (max-width: 768px) {
+.hero{
+    background-image: url(./hero-hexagon-pattern-mobile.svg), url(./bg-shading.png);
+    background-size: cover;
+}
+
+.heroContents{
+    padding-left: 0;
+}
+
+.heroHeading1{
+    font-size: 30px;
+    line-height: 50px;
+}
+
+.heroHeading2{
+    font-size: 20px;
+}
+
+.heroReadMoreBtnText{
+    font-size: 15px;
+    margin: 5px 10px;
+}
+}
+
+@media (orientation: portrait) {
+.hero{
+    background-image: url(./hero-hexagon-pattern-mobile.svg), url(./bg-shading.png);
+    background-size: cover, contain;
+    background-position: bottom center, top left;
+}
+}

@@ -1,0 +1,118 @@
+.events{
+    background-color: #607299;
+    position: relative;
+    padding-top: 50px;
+    /* padding-bottom: 50px; */
+}
+
+.eventsHeading{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 75px;
+    text-align: center;
+    color: #FFFFFF;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.eventsHeadingUl{
+    margin-top: 30px;
+    margin-bottom: 60px;
+    width: 100px;
+}
+
+.swiper{
+    height: fit-content;
+    max-width: 1440px;
+    /* position: absolute; */
+}
+
+.carouselCard{
+    margin-bottom: 50px;
+    transition: all .2s ease;
+}
+
+.carouselCardInactive{
+    transform: scale(0.85);
+    cursor: pointer;
+}
+
+.eventImg {
+    position: relative;
+}
+.eventImg:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+  
+.eventImg img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-title{
+    font-size: 24px;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    background-color: #607299;
+    padding: 20px;
+    border-radius: 10px;
+    height: 100%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.swiper-button-next{
+    right: 0;
+}
+.swiper-button-prev{
+    left: 0;
+}
+
+.swiper-pagination-bullet-active{
+    background: white;
+}
+
+@media only screen and (max-width: 1024px) {
+.eventsHeadingUl{
+    margin-top: 20px;
+    width: 80px;
+}
+
+.eventsHeading{
+    font-size: 40px;
+}
+}
+
+@media only screen and (max-width: 768px) {
+.eventsHeading{
+    font-size: 30px;
+}
+
+.eventsHeadingUl{
+    width: 40px;
+    height: 1.25px;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+}
+
+@media (orientation: portrait){
+.swiper-button-next, .swiper-button-prev{
+    display: none;
+}
+}

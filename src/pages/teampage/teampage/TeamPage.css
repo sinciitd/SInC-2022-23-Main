@@ -1,0 +1,366 @@
+/* Team Base Page */
+.teamPageBase {
+    padding-top: 3.688rem;
+    background-color: #607299;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+/* Headings */
+.teamHeading {
+    /* Poppins to be Installed */
+    margin-top: 5.688rem;
+    margin-bottom: 1rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+
+
+
+.teamsHeading {
+    /* Poppins to be Installed */
+    margin-top: 4.063rem;
+    margin-bottom: 4.063rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 75px;
+    color: #FFFFFF;
+}
+
+
+
+/* Bar */
+.bar-mobile {
+    display: none;
+}
+
+.bar {
+    align-self: center;
+    padding: 1rem;
+}
+
+
+/* OC Card */
+.cardOC {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 21.996rem;
+    height: 32.5rem;
+    border-radius: 25px;
+    position: relative;
+}
+
+.cardNameOC {
+    position: absolute;
+    bottom: -15px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: rgba(217, 217, 217, 1);
+    width: 21.996rem;
+    height: 4.723rem;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 25px;
+    font-family: Montserrat;
+    font-weight: 500;
+    /* text-overflow: clip; */
+}
+
+.card-img-topOC {
+    width:inherit;
+    height: inherit;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+/* CTM Card */
+.div-CTM {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.313rem;
+    justify-content: center;
+}
+
+.cardCTM {
+    margin-right:7.75rem;
+    margin-left:7.75rem;
+    margin-top:1rem;
+    margin-bottom:1rem;
+    display: flex;
+    width: 19.5rem;
+    height: 28.813rem;
+    border-radius: 25px;
+    position: relative;
+
+}
+
+.cardNameCTM {
+    position: absolute;
+    bottom: -15px;
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+    background-color: rgba(217, 217, 217, 1);
+    width: 19.5rem;
+    height: 4.188rem;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 25px;
+    font-family: Montserrat;
+    font-weight: 500;
+}
+
+.card-img-topCTM {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+
+
+/* Coordinator Card */
+
+.div-Coordi {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.313rem;
+    justify-content: center;
+}
+
+.cardCoordi {
+    margin-left: 1.201rem;
+    margin-right: 1.201rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    display: flex;
+    width: 12.313rem;
+    height: 17.513rem;
+    border-radius: 25px;
+    position: relative;
+
+}
+
+.cardNameCoordi {
+    position: absolute;
+    bottom: -20px;
+    padding-top: 1rem;
+    padding-bottom: 4.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: rgba(217, 217, 217, 1);
+    width: 12.313rem;
+    height: 2.6rem;
+    line-height: 1.448rem;
+    border-radius: 15px;
+    text-align: center;
+    text-overflow: clip;
+    font-size: 1.1rem;
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 500;
+}
+
+.CAR-mobile{
+    display: none;
+}
+
+.card-img-topCoordi {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+
+
+/* Executive */
+.div-section {
+    width: 100%;
+}
+
+.div-exe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 4.658rem;
+    margin-bottom: 2.658rem;
+}
+
+.circle-container {
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+        margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+
+}
+
+.rounded-circle {
+    height: 7.911rem;
+    width: 7.911rem;
+    object-fit: cover;
+}
+
+.circleName {
+    padding-top: 1rem;
+    font-size: 1.188rem;
+    color: white;
+}
+
+.position-executive {
+    padding: 0.11rem;
+}
+@media only screen and (max-width: 1160px) {
+    .cardCTM {
+        margin-right:5rem;
+        margin-left:5rem;
+    }
+}
+@media only screen and (max-width: 986px) {
+    .cardCTM {
+        margin-right:3rem;
+        margin-left:3rem;
+    }
+}
+@media only screen and (max-width: 858px) {
+    .cardCTM {
+        margin-right:2rem;
+        margin-left:2rem;
+    }
+}
+@media only screen and (max-width: 786px) {
+    body {
+        background-color: #607299;
+    }
+    .cardCTM {
+        margin-right:3rem;
+        margin-left:3rem;
+    }
+}
+
+
+@media only screen and (max-width: 794px) {
+    .bar-mobile {
+        display: initial;
+    }
+    
+    .bar {
+        align-self: none;
+        padding: 1rem;
+    }
+    body {
+        background-color: #607299;
+    }
+
+    .teamHeading {
+        margin-top: 2.688rem;
+        margin-bottom: 0.5rem;
+        font-size: 24px;
+    }
+
+    .teamsHeading {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-size: 24px;
+    }
+
+    .bar {
+        visibility: hidden;
+        display: none;
+    }
+
+    .cardOC {
+        width: 16.382rem;
+        height: 19.5rem;
+    }
+
+    .cardNameOC {
+        width: 16.382rem;
+        height: 4.125rem;
+    }
+
+    .cardCTM {
+        width: 9.208rem;
+        height: 12.938rem;
+        margin-right:0rem;
+        margin-left:0rem;
+    }
+
+    .cardNameCTM {
+        width: 9.208rem;
+        height: 2.313rem;
+        font-size: 14px;
+        bottom: -7.5px;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+
+    }
+
+    .div-Coordi {
+        flex-wrap: nowrap;
+    }
+
+    .cardCoordi {
+        width: 6.489rem;
+        height: 10.338rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .cardNameCoordi {
+        width: 6.489rem;
+        height: 3.7rem;
+        font-size: 0.825rem;
+        padding-top: 0.5rem;
+        padding-bottom: 1.5rem;
+    }
+    .cardNameCoordi h5{
+        font-size: 0.825rem;
+    }
+    .circle-container {
+        margin-top: 0.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        /* margin-right: 0rem;
+        margin-right: 0rem; */
+
+    }
+
+    .rounded-circle {
+        height: 4.688rem;
+        width: 4.688rem;
+    }
+    .position-executive {
+        padding: 0rem;
+    }
+    .circleName {
+        padding-top: 0.5rem;
+        font-size: 0.825rem;
+        color: white;
+
+    }
+    .circleName h5{
+        font-size: 0.825rem;
+        word-wrap: break-word;
+        /* font-size: 0.625rem; */
+    }
+
+    .CAR-mobile{
+        display: initial;
+    }
+    .CAR-web{
+        display: none;
+    }
+    
+}
