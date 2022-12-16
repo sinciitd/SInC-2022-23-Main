@@ -1,0 +1,41 @@
+.scroll {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+.scroll_left {
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-right: 60px;
+  margin-left: 100px;
+  width: 20%;
+}
+.scroll_right {
+  display: flex;
+  flex-direction: column;
+}
+.scroll_right > h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.scroll_right > h4 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.button_container{
+  display: flex;
+}
+.button{
+  border: 1px solid #ffffff;
+  padding: 5px;
+  border-radius: 5px;
+  color: #ffffff;
+  width: auto;
+  margin-right: 10px;
+}
