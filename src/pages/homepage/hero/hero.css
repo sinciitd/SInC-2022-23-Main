@@ -43,7 +43,7 @@ body{
 }
 
 .heroReadMoreBtn{
-    background: #FFFF00;
+    background: #5cc6cf;
     box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.31);
     border-radius: 10px;
     margin: auto;
@@ -52,7 +52,7 @@ body{
 }
 
 .heroReadMoreBtn:hover{
-    background-color: #d1d100;
+    background-color: #41a9b3;
 }
 
 .heroReadMoreBtnText, .heroReadMoreBtnText:hover{
@@ -60,7 +60,7 @@ body{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    /* font-size: 24px; */
     line-height: 36px;
     margin: 10px 20px;
     color: #000000;

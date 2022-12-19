@@ -1,7 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Header.css";
-import logo from "./logo.png";
+import logo from "./logo.svg";
+// import logo from "./logo.png";
 
 const Header = () => {
   return (
@@ -32,30 +33,45 @@ const Header = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav">
             <li className="nav-item active">
-              <Link className="nav-link" to="/">
+              {/* <Link className="nav-link" to="/">
                 Home
-              </Link>
+              </Link> */}
+              <NavLink to="/" end className={({isActive}) => isActive ? "nav-link nav-link-active" : "nav-link"}>
+                Home
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/events">
+              {/* <Link className="nav-link" to="/events">
                 Events
-              </Link>
+              </Link> */}
+              <NavLink to="/events" className={({isActive}) => isActive ? "nav-link nav-link-active" : "nav-link"}>
+                Events
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/about">
+              {/* <Link className="nav-link" to="/about">
                 About Us
-              </Link>
+              </Link> */}
+              <NavLink to="/about" className={({isActive}) => isActive ? "nav-link nav-link-active" : "nav-link"}>
+                About Us
+              </NavLink>
             </li>
             <div className="vertical-line"></div>
             <li className="nav-item">
-              <Link className="nav-link" to="/contact">
+              {/* <Link className="nav-link" to="/contact">
                 Contact Us
-              </Link>
+              </Link> */}
+              <NavLink to="/contact" className={({isActive}) => isActive ? "nav-link nav-link-active" : "nav-link"}>
+                Contact Us
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/register">
+              {/* <Link className="nav-link" to="/register">
                 Register
-              </Link>
+              </Link> */}
+              <NavLink to="/register" className={({isActive}) => isActive ? "nav-link nav-link-active" : "nav-link"}>
+                Register
+              </NavLink>
             </li>
           </ul>
         </div>
