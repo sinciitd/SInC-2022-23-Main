@@ -36,7 +36,13 @@ const Header = () => {
               {/* <Link className="nav-link" to="/">
                 Home
               </Link> */}
-              <NavLink to="/" end className={({isActive}) => isActive ? "nav-link nav-link-active" : "nav-link"}>
+              <NavLink
+                to="/"
+                end
+                className={({ isActive }) =>
+                  isActive ? "nav-link nav-link-active" : "nav-link"
+                }
+              >
                 Home
               </NavLink>
             </li>
@@ -44,7 +50,12 @@ const Header = () => {
               {/* <Link className="nav-link" to="/events">
                 Events
               </Link> */}
-              <NavLink to="/events" className={({isActive}) => isActive ? "nav-link nav-link-active" : "nav-link"}>
+              <NavLink
+                to="/events"
+                className={({ isActive }) =>
+                  isActive ? "nav-link nav-link-active" : "nav-link"
+                }
+              >
                 Events
               </NavLink>
             </li>
@@ -52,7 +63,12 @@ const Header = () => {
               {/* <Link className="nav-link" to="/about">
                 About Us
               </Link> */}
-              <NavLink to="/about" className={({isActive}) => isActive ? "nav-link nav-link-active" : "nav-link"}>
+              <NavLink
+                to="/about"
+                className={({ isActive }) =>
+                  isActive ? "nav-link nav-link-active" : "nav-link"
+                }
+              >
                 About Us
               </NavLink>
             </li>
@@ -61,7 +77,12 @@ const Header = () => {
               {/* <Link className="nav-link" to="/contact">
                 Contact Us
               </Link> */}
-              <NavLink to="/contact" className={({isActive}) => isActive ? "nav-link nav-link-active" : "nav-link"}>
+              <NavLink
+                to="/contact"
+                className={({ isActive }) =>
+                  isActive ? "nav-link nav-link-active" : "nav-link"
+                }
+              >
                 Contact Us
               </NavLink>
             </li>
@@ -69,7 +90,12 @@ const Header = () => {
               {/* <Link className="nav-link" to="/register">
                 Register
               </Link> */}
-              <NavLink to="/register" className={({isActive}) => isActive ? "nav-link nav-link-active" : "nav-link"}>
+              <NavLink
+                to="/register"
+                className={({ isActive }) =>
+                  isActive ? "nav-link nav-link-active" : "nav-link"
+                }
+              >
                 Register
               </NavLink>
             </li>
