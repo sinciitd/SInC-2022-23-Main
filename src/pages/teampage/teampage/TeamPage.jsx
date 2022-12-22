@@ -69,20 +69,7 @@ const TeamPage = () => {
                 <img className="bar" src={bar} alt="bar" />
                 <img className="bar-mobile" src={barMobile} alt="bar-mobile" />
 
-                <div className="teamsHeading">
-                    Overall Coordinator
-                </div>
-
-                <div className="d-flex flex-row justify-content-around align-items-center">
-                    <div className="p-2 bd-highlight">
-                        <div className="cardOC">
-                            <img className="card-img-topOC" src={oc} alt=""></img>
-                            <div className="cardNameOC">
-                                Madhav Malani
-                            </div>
-                        </div>
-                    </div>
-                </div>
+               
 
                 {/* Section Break */}
 
@@ -90,25 +77,40 @@ const TeamPage = () => {
                     Core Team Members
                 </div>
 
-                <div className='div-CTM'>
+                <div className='div-Coordi'>
 
-                    <div className="d-flex flex-row justify-content-around align-items-center">
+                <div className="d-flex flex-row justify-content-around align-items-center">
                         <div className="p-2 bd-highlight">
-                            <div className="cardCTM">
-                                <img className="card-img-topCTM" src={ctm1} alt=""></img>
-                                <div className="cardNameCTM">
-                                    Amit Kumar
+                            <div className="cardCoordi">
+                                <img className="card-img-topCTM" src={oc} alt=""></img>
+                                <div className="cardNameCoordi">
+                                <h5>Madhav Malani</h5>
+                                        Overall Coordinator
                                 </div>
                             </div>
                         </div>
                     </div>
 
+                <div className="d-flex flex-row justify-content-around align-items-center">
+                        <div className="p-2 bd-highlight">
+                            <div className="cardCoordi">
+                                <img className="card-img-topCTM" src={ctm1} alt=""></img>
+                                <div className="cardNameCoordi">
+                                <h5>Amit Kumar</h5>
+                                        CTM
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
                     <div className="d-flex flex-row justify-content-around align-items-center">
                         <div className="p-2 bd-highlight">
-                            <div className="cardCTM">
+                            <div className="cardCoordi">
                                 <img className="card-img-topCTM" src={ctm2} alt=""></img>
-                                <div className="cardNameCTM">
-                                    Rahul Chhabra
+                                <div className="cardNameCoordi">
+                                <h5>Rahul Chhabra</h5>
+                                        CTM
                                 </div>
                             </div>
                         </div>
