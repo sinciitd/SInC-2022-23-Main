@@ -10,13 +10,10 @@ import Register from './register/Register'
 function Home() {
   return (
     <>
-      {/* <Header/> */}
       <Hero/>
       <Events/>
-      {/* <AboutUs/> */}
       <Contact/>
       <Register/>
-      {/* <Footer/> */}
     </>
   );
 }
