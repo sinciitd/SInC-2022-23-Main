@@ -1,8 +1,16 @@
-# Getting Started with Create React App
+# SInC Website 2022-23
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Instructions for Backend
 
-## Available Scripts
+- Clone the repo in your local machine
+- Create python virtual environment: `python -m venv env`
+- To activate it in Windows, run: `env\Scripts\activate`
+- In VSCode: Ctrl+Shift+P > Python:Select Interpreter. Select venv path from there.
+- Install dependencies: `pip install -r requirements.txt`
+- `cd portal`
+- Start server: `python manage.py runserver`
+
+## Instructions for Frontend
 
 In the project directory, you can run:
 
