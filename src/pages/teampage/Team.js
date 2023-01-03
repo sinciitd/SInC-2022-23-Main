@@ -1,11 +1,9 @@
 import React from "react";
 import TeamPage from './teampage/TeamPage'
 
-function Team(){
-return(
-  <>
+function Team() {
+  return (
     <TeamPage />
-  </>
-);
+  );
 }
 export default Team;

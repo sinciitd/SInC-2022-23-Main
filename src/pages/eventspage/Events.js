@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useRef } from "react";
 import "./Events.css";
 import Scroll from "./Scroll";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";

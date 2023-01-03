@@ -50,7 +50,7 @@
 
 
 /* OC Card */
-.cardOC {
+/* .cardOC {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -73,7 +73,7 @@
     font-size: 25px;
     font-family: Montserrat;
     font-weight: 500;
-    /* text-overflow: clip; */
+    text-overflow: clip;
 }
 
 .card-img-topOC {
@@ -81,10 +81,10 @@
     height: inherit;
     object-fit: cover;
     border-radius: 25px;
-}
+} */
 
 /* CTM Card */
-.div-CTM {
+/* .div-CTM {
     display: flex;
     flex-wrap: wrap;
     padding: 0.313rem;
@@ -126,9 +126,7 @@
     height: inherit;
     object-fit: cover;
     border-radius: 25px;
-}
-
-
+} */
 
 /* Coordinator Card */
 
