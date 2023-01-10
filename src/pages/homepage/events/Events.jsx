@@ -16,13 +16,11 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
 import { EventDataBase } from "../data/data";
+import data from "../../../data/events.json"
 import "./events.css";
 
 export default function Events() {
   const slides = EventDataBase;
-  // const slides = Array.from({ length: 10 }).map(
-  //     (el, index) => `Slide ${index + 1}`
-  // );
 
   return (
     <div className="events">
@@ -44,11 +42,11 @@ export default function Events() {
           // loop={true}
           navigation
           pagination={{ clickable: true }}
-          virtual={{
-            slides: slides,
-            addSlidesAfter: slides.length,
-            addSlidesBefore: slides.length,
-          }}
+          // virtual={{
+          //   slides: slides,
+          //   addSlidesAfter: slides.length,
+          //   addSlidesBefore: slides.length,
+          // }}
           breakpoints={{
             // 1281: {
             //     slidesPerView: 6,
@@ -67,7 +65,49 @@ export default function Events() {
             },
           }}
         >
-          {slides.map((slideContent, index) => (
+          {data.map((event) => (
+            <SwiperSlide key={event.id}>
+              {({ isActive }) => (
+                <div
+                  className={
+                    isActive
+                      ? "card carouselCard carouselCardActive"
+                      : "card carouselCard carouselCardInactive"
+                  }
+                >
+                  <div className="card-img-top eventImg">
+                    <img src={require(`../../../data/${event.image}`)} alt="events" />
+                  </div>
+                  <div className="card-footer">
+                    {isActive ? (
+                      <div className="card-title mt-1">{event.title}</div>
+                    ) : (
+                      <div className="card-title text-truncate mt-1">{event.title}</div>
+                    )}
+                    <div className="card-text">
+                      <div className="eventDate mb-2">
+                        <svg className="eventDateIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M152 64H296V24C296 10.75 306.7 0 320 0C333.3 0 344 10.75 344 24V64H384C419.3 64 448 92.65 448 128V448C448 483.3 419.3 512 384 512H64C28.65 512 0 483.3 0 448V128C0 92.65 28.65 64 64 64H104V24C104 10.75 114.7 0 128 0C141.3 0 152 10.75 152 24V64zM48 448C48 456.8 55.16 464 64 464H384C392.8 464 400 456.8 400 448V192H48V448z"/></svg>
+                        <span> {event.date}</span>
+                      </div>
+                      <div className="collapse mt-2" id={`eventCollapse${event.id}`}>
+                        {event.description}
+                      </div>
+                      <a
+                        className="eventReadMore text-decoration-none"
+                        data-bs-toggle="collapse"
+                        href={`#eventCollapse${event.id}`}
+                        aria-expanded="false"
+                        aria-controls={`#eventCollapse${event.id}`}
+                      >
+                        Read more &raquo;
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </SwiperSlide>
+          ))}
+          {/* {slides.map((slideContent, index) => (
             <SwiperSlide key={slideContent} virtualIndex={index}>
               {({ isActive }) => (
                 <div
@@ -106,7 +146,7 @@ export default function Events() {
                 </div>
               )}
             </SwiperSlide>
-          ))}
+          ))} */}
         </Swiper>
       </div>
     </div>
