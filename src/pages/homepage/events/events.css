@@ -3,11 +3,11 @@
     position: relative;
     padding-top: 50px;
     /* padding-bottom: 50px; */
+    font-family: 'Poppins';
+    font-style: normal;
 }
 
 .eventsHeading{
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: 50px;
     line-height: 75px;
@@ -40,6 +40,14 @@
 .carouselCardInactive{
     transform: scale(0.85);
     cursor: pointer;
+    /* decrease brightness */
+    filter: brightness(0.75);
+}
+
+.card-title{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
 }
 
 .eventImg {
@@ -64,7 +72,15 @@
 }
 
 .card-title{
-    font-size: 24px;
+    font-size: 22px;
+}
+
+.eventDate{
+    font-size: 14px;
+}
+
+.eventDateIcon{
+    width: 15px;
 }
 
 .swiper-button-next, .swiper-button-prev{

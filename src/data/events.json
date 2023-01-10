@@ -1,0 +1,82 @@
+[
+    {
+        "id":1,
+        "title": "Ideation and Prototyping Session",
+        "date": "November 8, 2022",
+        "description": "First Edition of the Lecture Series was conducted on Ideation and Prototyping with the founder of Exobot Dynamics Mr. Munish Kumar",
+        "link": "https://www.instagram.com/p/CkryjZDIw5n/?utm_source=ig_web_copy_link",
+        "image": "event1.png"
+    },
+    {
+        "id":2,
+        "title": "Pitching Session",
+        "date": "August 31, 2022",
+        "description": "",
+        "link": "",
+        "image": "default.svg"
+    },
+    {
+        "id":3,
+        "title": "Zero to Hero: Lecture 2",
+        "date": "February 5, 2022",
+        "description": "The talk covered Fundraising Fundamentals of an early-age startup by Mr. Seemant Srivastav, who is the co-founder of Mool Innovation of Labs",
+        "link": "https://www.instagram.com/p/CZgTTcAF_no/?utm_source=ig_web_copy_link",
+        "image": "event3.png"
+    },
+    {
+        "id":4,
+        "title": "Zero to Hero: Lecture 1",
+        "date": "January 14, 2022",
+        "description": "Mr. Taranpreet Singh, NSIT alumni and the current CEO of Sharrk Ventures and Sleeplabs, covered the basics of startups and a plethora of details on how to get started in the entrepreneurial journey",
+        "link": "https://www.instagram.com/p/CYoAvpAIwR_/?utm_source=ig_web_copy_link",
+        "image": "event4.png"
+    },
+    {
+        "id":5,
+        "title": "Incubation at FITT",
+        "date": "August 14, 2021",
+        "description": "A session on the details about incubating startups at FITT, IIT Delhi, was organized with Mr. Ashutosh Pastor, the Manager for handling Startup Incubation at FITT",
+        "link": "https://www.instagram.com/p/CShjnmlo_8n/?utm_source=ig_web_copy_link",
+        "image": "event5.png"
+    },
+    {
+        "id":6,
+        "title": "First Steps Towards Successful Startup",
+        "date": "April 25, 2021",
+        "description": "The event showcased Mr. Chitransh Sahai, a 2015 IITD alumnus and the current Director and Founder of GoComet - a logistics resource management SaaS platform based out of Singapore",
+        "link": "https://www.instagram.com/p/COBUf7gFngj/?utm_source=ig_web_copy_link",
+        "image": "event6.png"
+    },
+    {
+        "id":7,
+        "title": "Becoming a UG Founder",
+        "date": "April 17, 2021",
+        "description": "The event featured Mayank Dubey, a CS 4th year undergraduate defying the trend, who knocked on the OCS' doors, looking for employees for his company thepluto.club (StringVenture LLC).",
+        "link": "https://www.instagram.com/p/CNsns9glNu8/?utm_source=ig_web_copy_link",
+        "image": "event7.png"
+    },
+    {
+        "id":8,
+        "title": "Idea-Talk on Electric Vehicles",
+        "date": "December 30, 2020",
+        "description": "The discussion was majorly on the current status of the EV Market in India and the role of startups",
+        "link": "",
+        "image": "default.svg"
+    },
+    {
+        "id":9,
+        "title": "Idea-Talk on UPI Payments",
+        "date": "November 25, 2020",
+        "description": "The discussion was held about the increasing trend around UPI payments in India and the probable domination of the US tech giants in this space",
+        "link": "",
+        "image": "default.svg"
+    },
+    {
+        "id":10,
+        "title": "Edtech Discussion",
+        "date": "November 4, 2020",
+        "description": "Provided a platform for exchanging thoughts and ideas on Edtech Startups. It was primarily steered toward discussing the gaps in the existing startups and the future of the Edtech Industry",
+        "link": "",
+        "image": "default.svg"
+    }
+]
