@@ -58,7 +58,7 @@ export default function Events() {
                   }
                 >
                   <div className="card-img-top eventImg">
-                    <img src={require(`../../../data/${event.image}`)} alt="events" />
+                    <img src={require(`../../../data/${event.images[0]}`)} alt="events" />
                   </div>
                   <div className="card-footer">
                     {isActive ? (

@@ -4,33 +4,62 @@ import TextSnippetIcon from '@mui/icons-material/TextSnippet';
 import PlayArrowOutlinedIcon from '@mui/icons-material/PlayArrowOutlined';
 import CommentIcon from '@mui/icons-material/Comment';
 
-function Scroll({ date, title, desc, pptx, play, com }) {
+function Scroll({ event }) {
   return (
     <div className="scroll">
-      <div className="scroll_left">{date}</div>
+      <div className="scroll_left">{event.date_short}</div>
       <div className="scroll_right">
-        <h3>{title}</h3>
-        <h4>{desc}</h4>
+        <h3>{event.title}</h3>
+        <h4>{event.description}</h4>
         <div className='button_container'>
-        {com!=null &&(
+        {event.com!=null &&(
         <div className='button'>
           <CommentIcon style={{marginRight: "5px"}}/>
-          {com}
+          {event.com}
         </div>)}
-        {pptx!=null && (
+        {event.pptx!=null && (
         <div className='button'>
           <TextSnippetIcon style={{marginRight: "5px"}}/>
-          {pptx}
+          {event.pptx}
         </div>)}
-        {play!=null &&(
+        {event.play!=null &&(
         <div className='button'>
           <PlayArrowOutlinedIcon style={{marginRight: "5px"}}/>
-          {play}
+          {event.play}
         </div>)}
         </div>
       </div>
     </div>
   );
 }
+
+// function Scroll({ date, title, desc, pptx, play, com }) {
+//   return (
+//     <div className="scroll">
+//       <div className="scroll_left">{date}</div>
+//       <div className="scroll_right">
+//         <h3>{title}</h3>
+//         <h4>{desc}</h4>
+//         <div className='button_container'>
+//         {com!=null &&(
+//         <div className='button'>
+//           <CommentIcon style={{marginRight: "5px"}}/>
+//           {com}
+//         </div>)}
+//         {pptx!=null && (
+//         <div className='button'>
+//           <TextSnippetIcon style={{marginRight: "5px"}}/>
+//           {pptx}
+//         </div>)}
+//         {play!=null &&(
+//         <div className='button'>
+//           <PlayArrowOutlinedIcon style={{marginRight: "5px"}}/>
+//           {play}
+//         </div>)}
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
 
 export default Scroll;

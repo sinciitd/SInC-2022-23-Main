@@ -4,6 +4,7 @@ import Scroll from "./Scroll";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import Detail from "./Detail";
+import data from "../../data/events.json";
 
 function Events() {
   let scrl = useRef(null);
@@ -34,6 +35,8 @@ function Events() {
     }
   };
 
+  const [activeItem, setActiveItem] = useState(1);
+
   return (
     <div className="eventspage">
       <div className="eventsLeft">
@@ -46,7 +49,13 @@ function Events() {
           </div>
         )}
         <div className="scrollContainer" ref={scrl} onScroll={scrollCheck}>
-          <Scroll
+          {data.map((item) => (
+            <div key={item.id} onClick={() => setActiveItem(item.id)}>
+              <Scroll event={item} />
+            </div>
+          ))}
+
+          {/* <Scroll
             date="Jan 22"
             title="Event Name"
             desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit arcu aliquet ut dui egestas."
@@ -111,7 +120,8 @@ function Events() {
             date="Jan 22"
             title="Event Name"
             desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit arcu aliquet ut dui egestas."
-          />
+          /> */}
+
         </div>
         {!scrollEnd && (
           <div className="downArrow" onClick={() => slide(+50)}>
@@ -123,7 +133,8 @@ function Events() {
         )}
       </div>
       <div className="eventsRight">
-        <Detail
+        <Detail event={data[activeItem - 1]}/>
+        {/* <Detail
           title="Event name"
           descr="description about the event conducted"
           name="Dev Kataria"
@@ -134,7 +145,7 @@ function Events() {
           //   "https://images2.alphacoders.com/851/thumb-1920-85182.jpg",
           //   "https://images2.alphacoders.com/631/thumb-1920-631095.jpg",
           // ]}
-        />
+        /> */}
       </div>
     </div>
   );

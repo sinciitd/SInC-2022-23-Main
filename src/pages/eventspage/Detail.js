@@ -4,11 +4,11 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Comment from "./Comment";
 
-function Detail({ title, descr, caros, name, time, com_name }) {
+function Detail({ event }) {
   return (
     <div className="details">
-      <div className="details_title">{title}</div>
-      <div className="details_descr">{descr}</div>
+      <div className="details_title">{event.title}</div>
+      <div className="details_descr">{event.description}</div>
       <div className="details_caro">
         <Carousel autoPlay infiniteLoop showThumbs={false} interval="5000">
           {/* showThumbs property decides whether the list of small images below the carousel will be visible or not
@@ -19,7 +19,7 @@ function Detail({ title, descr, caros, name, time, com_name }) {
             </div>;
             console.log(caro);
           })} */}
-          <div>
+          {/* <div>
               <img alt="" src="https://images6.alphacoders.com/679/thumb-1920-679459.jpg"/>
           </div>
           <div>
@@ -27,10 +27,13 @@ function Detail({ title, descr, caros, name, time, com_name }) {
           </div>
           <div>
               <img alt="" src="https://images2.alphacoders.com/631/thumb-1920-631095.jpg"/>
+          </div> */}
+          <div>
+            <img alt="" src={require(`../../data/${event.images[0]}`)} />
           </div>
         </Carousel>
       </div>
-      <div className="comment_by">
+      {/* <div className="comment_by">
         <div className="by_pic">
           <img
             src={
@@ -63,7 +66,7 @@ function Detail({ title, descr, caros, name, time, com_name }) {
           {com_name}
           <Comment />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
