@@ -31,6 +31,7 @@ export default function Events() {
           slideToClickedSlide={true}
           navigation
           pagination={{ clickable: true }}
+          loop={true}
           breakpoints={{
             1025: {
               slidesPerView: 5,
