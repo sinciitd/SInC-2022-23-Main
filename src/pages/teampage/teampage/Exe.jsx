@@ -6,7 +6,7 @@ const Exe = (props) => {
             <div className="bd-highlight circle-container">
                 <img className="card-img-top rounded-circle" src={props.img} alt=""></img>
                 <div className="circleName">
-                    <h5>{props.name}</h5>
+                    <div><b>{props.name}</b></div>
                     Executive
                 </div>
             </div>

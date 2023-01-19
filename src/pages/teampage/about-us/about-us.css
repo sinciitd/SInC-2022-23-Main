@@ -1,6 +1,6 @@
 .aboutUs{
     position: relative;
-    padding: 150px 50px 0 50px;
+    padding: 100px 50px 0 50px;
 }
 
 .aboutUsHeading{
@@ -89,7 +89,7 @@
     width: 40px;
     height: 1.25px;
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .aboutUsIllustration{

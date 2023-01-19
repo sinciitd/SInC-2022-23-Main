@@ -55,20 +55,16 @@ const TeamPage = () => {
         <img className="bar" src={bar} alt="bar" />
         <img className="bar-mobile" src={barMobile} alt="bar-mobile" />
         <div className="teamsHeading">Core Team</div>
-        <Card name="Madhav Malani" position="OC" img={oc} />
+        <Card name="Madhav Malani" position="Overall Coordinator" img={oc} />
         <div className="div-Coordi">
-          <Card name="Amit Kumar" position="CTM" img={ctm1} />
-          <Card name="Rahul Chhabra" position="CTM" img={ctm2} />
+          <Card name="Amit Kumar" position="Core Member" img={ctm1} />
+          <Card name="Rahul Chhabra" position="Core Member" img={ctm2} />
         </div>
 
         <div className="teamsHeading">Technical & UI/UX</div>
         <div className="div-section">
           <div className="div-Coordi">
-            <Card
-              name="Satyapragnya"
-              position="Coordinator"
-              img={coordiTech1}
-            />
+            <Card name="Satyapragnya" position="Coordinator" img={coordiTech1} />
             <Card name="Harsh" position="Coordinator" img={coordiTech2} />
             <Card name="Dev" position="Coordinator" img={coordiTech3} />
           </div>

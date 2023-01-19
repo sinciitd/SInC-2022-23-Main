@@ -1,6 +1,6 @@
 /* Team Base Page */
 .teamPageBase {
-    padding-top: 3.688rem;
+    padding-top: 2rem;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -11,8 +11,8 @@
 /* Headings */
 .teamHeading {
     /* Poppins to be Installed */
-    margin-top: 5.688rem;
-    margin-bottom: 1rem;
+    margin-top: 5rem;
+    /* margin-bottom: 1rem; */
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
@@ -25,8 +25,8 @@
 
 .teamsHeading {
     /* Poppins to be Installed */
-    margin-top: 4.063rem;
-    margin-bottom: 4.063rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
@@ -153,13 +153,13 @@
     position: absolute;
     bottom: -20px;
     padding-top: 1rem;
-    padding-bottom: 4.5rem;
+    padding-bottom: 1rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
     background-color: rgba(217, 217, 217, 1);
     width: 12.313rem;
-    height: 2.6rem;
-    line-height: 1.448rem;
+    /* height: 2.6rem; */
+    /* line-height: 1rem; */
     border-radius: 15px;
     text-align: center;
     text-overflow: clip;
@@ -191,27 +191,27 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 4.658rem;
-    margin-bottom: 2.658rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
 }
 
 .circle-container {
     margin-left: 3.5rem;
     margin-right: 3.5rem;
-        margin-top: 0.3rem;
+    margin-top: 0.3rem;
     margin-bottom: 0.3rem;
 
 }
 
 .rounded-circle {
-    height: 7.911rem;
-    width: 7.911rem;
+    height: 8rem;
+    width: 8rem;
     object-fit: cover;
 }
 
 .circleName {
     padding-top: 1rem;
-    font-size: 1.188rem;
+    font-size: 1.2rem;
     color: white;
 }
 
@@ -255,14 +255,14 @@
     }
 
     .teamHeading {
-        margin-top: 2.688rem;
+        margin-top: 1.5rem;
         margin-bottom: 0.5rem;
         font-size: 24px;
     }
 
     .teamsHeading {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+        margin-top: 1rem;
+        margin-bottom: .5rem;
         font-size: 24px;
     }
 
@@ -298,9 +298,9 @@
 
     }
 
-    .div-Coordi {
+    /* .div-Coordi {
         flex-wrap: nowrap;
-    }
+    } */
 
     .cardCoordi {
         width: 6.489rem;
@@ -311,13 +311,15 @@
 
     .cardNameCoordi {
         width: 6.489rem;
-        height: 3.7rem;
-        font-size: 0.825rem;
+        /* height: 3.7rem; */
+        font-size: 0.75rem;
+        line-height: 0.9rem;
         padding-top: 0.5rem;
-        padding-bottom: 1.5rem;
+        padding-bottom: 0.5rem;
+        border-radius: 9px;
     }
-    .cardNameCoordi h5{
-        font-size: 0.825rem;
+    .cardNameCoordi div{
+        margin-bottom: 2px;
     }
     .circle-container {
         margin-top: 0.5rem;
@@ -354,4 +356,11 @@
         display: none;
     }
     
+    .div-exe{
+        margin-top: 2rem;
+    }
+
+    .card-img-topCoordi{
+        border-radius: 10px;
+    }
 }
