@@ -51,6 +51,7 @@
 
 .eventImg {
     position: relative;
+    overflow: hidden;
 }
 .eventImg:after {
     content: "";
