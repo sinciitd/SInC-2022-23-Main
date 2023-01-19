@@ -6,7 +6,7 @@ import logo from "./logo.svg";
 const Header = () => {
   return (
     <div className="header">
-      <nav className="navbar navbar-expand-lg navbar-light bg-blue shadow">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-blue shadow">
         <img
           className="logo"
           alt="logo"
