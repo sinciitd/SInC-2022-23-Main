@@ -1,3 +1,5 @@
+// UNUSED
+
 import { useState } from "react";
 import "./register.css";
 import il from "./register-illustration.svg";

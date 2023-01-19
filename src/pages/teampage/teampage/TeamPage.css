@@ -1,7 +1,6 @@
 /* Team Base Page */
 .teamPageBase {
     padding-top: 3.688rem;
-    background-color: #607299;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -238,9 +237,6 @@
     }
 }
 @media only screen and (max-width: 786px) {
-    body {
-        background-color: #607299;
-    }
     .cardCTM {
         margin-right:3rem;
         margin-left:3rem;
@@ -256,9 +252,6 @@
     .bar {
         align-self: none;
         padding: 1rem;
-    }
-    body {
-        background-color: #607299;
     }
 
     .teamHeading {

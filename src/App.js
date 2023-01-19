@@ -6,6 +6,7 @@ import Team from "./pages/teampage/Team";
 import Contact from "./pages/homepage/contact/Contact";
 import Events from "./pages/eventspage/Events";
 import Form from "./pages/registration/Form";
+import './App.css'
 
 function App() {
   return (
