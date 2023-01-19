@@ -36,7 +36,23 @@
 
 .aboutUsTextbox{
     flex: 1;
-    border-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #FFFFFF;
+    margin-left: 30px;
+    padding: 35px;
+    height: fit-content;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    /* line-height: 36px; */
+    text-align: justify;
+}
+
+.aboutUsTextbox2{
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     background-color: #FFFFFF;
     margin-left: 30px;
     padding: 35px;
@@ -50,7 +66,7 @@
 }
 
 @media only screen and (max-width: 1280px) {
-.aboutUsTextbox{
+.aboutUsTextbox, .aboutUsTextbox2{
     font-size: 20px;
     padding: 40px;
 }
@@ -70,7 +86,7 @@
     width: 100%;
 }
 
-.aboutUsTextbox{
+.aboutUsTextbox, .aboutUsTextbox2{
     padding: 30px;
     font-size: 16px;
 }
@@ -97,9 +113,15 @@
 }
 
 .aboutUsTextbox{
-    padding: 20px;
+    padding: 20px 20px 0 20px;
     font-size: 15px;
     margin-left: 0;
-    max-height: 500px;
+}
+
+.aboutUsTextbox2{
+    padding:0 20px 20px 20px;
+    font-size: 15px;
+    margin-left: 0;
+    max-height: 1000px;
 }
 }
