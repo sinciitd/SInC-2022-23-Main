@@ -31,6 +31,7 @@ export default function Events() {
           slideToClickedSlide={true}
           navigation
           pagination={{ clickable: true }}
+          loop={true}
           breakpoints={{
             1025: {
               slidesPerView: 5,
@@ -57,7 +58,7 @@ export default function Events() {
                   }
                 >
                   <div className="card-img-top eventImg">
-                    <img src={require(`../../../data/${event.image}`)} alt="events" />
+                    <img src={require(`../../../data/${event.images[0]}`)} alt="events" />
                   </div>
                   <div className="card-footer">
                     {isActive ? (

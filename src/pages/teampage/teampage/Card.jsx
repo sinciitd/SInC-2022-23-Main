@@ -5,9 +5,9 @@ const Card = (props) => {
         <div className="d-flex flex-row justify-content-around align-items-center">
             <div className="p-2 bd-highlight">
                 <div className="cardCoordi">
-                    <img className="card-img-topCoordi" src={props.img} alt=""></img>
+                    <img className="card-img-topCoordi" src={props.img} alt={`${props.name} image`}></img>
                     <div className="cardNameCoordi">
-                        <h5>{props.name}</h5>
+                        <div><b>{props.name}</b></div>
                         {props.position}
                     </div>
 

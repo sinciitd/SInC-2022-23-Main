@@ -14,8 +14,15 @@ export default function AboutUs() {
                     <img src={il} alt=''/>
                 </div>
                 <div className="aboutUsTextbox">
-                    The Student Incubation Cell, IIT Delhi is formed with an intent to promote design thinking, planful ideation and support budding Entrepreneurs at IIT DELHI who can make a mark on the world map through their vision, next-generation technology, and services by leading from the front. Our mission is to empower every student in the campus in every way possible who aim high to translate their ideas into real-world Startup and to help in a smooth transition in every phase of this journey. As they say “It’s not about ideas, it’s about making ideas happen and we are committed to pave the way with every step one takes.
+                    <h4>MISSION</h4>
+                    <p>Our mission is to empower every student on campus who aims high to turn their ideas into a real-world startup in every manner feasible and assist them in making a smooth transition through each stage of the process. As they say, "It's not about ideas; it's about making ideas happen," and we are committed to paving the path for them with every step they take. Our motto is to create an ecosystem that encourages students to explore their ideas freely by fostering constructive discussions with professors, industry veterans, investors, and peers. We aspire to aid all budding entrepreneurs at IIT Delhi to become established, successful and independent entrepreneurs.</p>
                 </div>
+            </div>
+            <div className="aboutUsTextbox2">
+                <h4>VISION</h4>
+                <p>We want IIT Delhi to become the flag bearer, not just in India but across the world. We will provide students with a plethora of amenities, including mentorship, incubation space(of which most startups are bereft of), and the much-needed legal expertise, which is as imperative as anything to launch a successful startup and funds. We connect students with industry experts and investors, provide incubation facilities and easy access to resources for product creation, and make them pitch-ready. We encourage individuals to engage in design thinking, planful ideation and foster the self-inculcation of new ideas.</p>
+                <h4>VALUES</h4>
+                <p>Well!, we construct roadmaps and keep to the deadlines we set. We never back down and always follow through on our promises. We believe in transparency; thus, our startup members and acquaintances are always updated on the latest events and happenings.</p>
             </div>
         </div>
     )

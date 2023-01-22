@@ -1,9 +1,4 @@
-body{
-    margin: 0;
-}
-
 .hero{
-    background-color: #607299;
     background-image: url(./hero-hexagon-pattern.svg);
     background-position: top left;
     background-repeat: no-repeat;
@@ -43,7 +38,7 @@ body{
 }
 
 .heroReadMoreBtn{
-    background: #5cc6cf;
+    background: #192D65;
     box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.31);
     border-radius: 10px;
     margin: auto;
@@ -52,7 +47,7 @@ body{
 }
 
 .heroReadMoreBtn:hover{
-    background-color: #41a9b3;
+    background-color: #0d1e4f;
 }
 
 .heroReadMoreBtnText, .heroReadMoreBtnText:hover{
@@ -63,7 +58,7 @@ body{
     /* font-size: 24px; */
     line-height: 36px;
     margin: 10px 20px;
-    color: #000000;
+    color: white;
     text-decoration: none;
 }
 
@@ -98,7 +93,7 @@ body{
 
 @media only screen and (max-width: 768px) {
 .hero{
-    background-image: url(./hero-hexagon-pattern-mobile.svg), url(./bg-shading.png);
+    background-image: url(./hero-hexagon-pattern-mobile.svg);
     background-size: cover;
 }
 
@@ -123,7 +118,7 @@ body{
 
 @media (orientation: portrait) {
 .hero{
-    background-image: url(./hero-hexagon-pattern-mobile.svg), url(./bg-shading.png);
+    background-image: url(./hero-hexagon-pattern-mobile.svg);
     background-size: cover, contain;
     background-position: bottom center, top left;
 }

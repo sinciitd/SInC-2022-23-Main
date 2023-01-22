@@ -1,5 +1,4 @@
 .events{
-    background-color: #607299;
     position: relative;
     padding-top: 50px;
     /* padding-bottom: 50px; */
@@ -52,6 +51,7 @@
 
 .eventImg {
     position: relative;
+    overflow: hidden;
 }
 .eventImg:after {
     content: "";
@@ -84,7 +84,7 @@
 }
 
 .swiper-button-next, .swiper-button-prev{
-    background-color: #607299;
+    background-color: #486DB3;
     padding: 20px;
     border-radius: 10px;
     height: 100%;

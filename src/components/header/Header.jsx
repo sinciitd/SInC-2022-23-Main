@@ -2,12 +2,11 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./Header.css";
 import logo from "./logo.svg";
-// import logo from "./logo.png";
 
 const Header = () => {
   return (
     <div className="header">
-      <nav className="navbar navbar-expand-lg navbar-light bg-blue shadow">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-blue shadow">
         <img
           className="logo"
           alt="logo"

@@ -90,11 +90,11 @@ export default function Contact() {
             <div className="contactNumsList">
               <div className="contactNumsItem">
                 <img src={fl} alt="contact" />
-                <span className="contactNumsItemText">+91 9876543210</span>
+                <span className="contactNumsItemText">+91 8827631820 (Madhav - Overall Coordinator)</span>
               </div>
               <div className="contactNumsItem">
                 <img src={fl} alt="contact" />
-                <span className="contactNumsItemText">+91 9876543210</span>
+                <span className="contactNumsItemText">+91 8824840647 (Rahul - Core Team Member)</span>
               </div>
             </div>
           </div>
