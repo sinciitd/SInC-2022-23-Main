@@ -8,7 +8,7 @@ import barMobile from "./bar_mobile.svg";
 // Images
 import oc from "../assets/oc/oc.jpg";
 import ctm1 from "../assets/ctm/ctm-amit-kumar.jpg";
-import ctm2 from "../assets/ctm/ctm-rahul-chhabra.jpg";
+import ctm2 from "../assets/ctm/ctm-rahul-chhabra.jpeg";
 import coordiTech1 from "../assets/technical/coordi-satyapragnya.jpg";
 import coordiTech2 from "../assets/technical/coordi-harsh.jpeg";
 import coordiTech3 from "../assets/technical/coordi-dev.jpg";
@@ -55,8 +55,8 @@ const TeamPage = () => {
         <img className="bar" src={bar} alt="bar" />
         <img className="bar-mobile" src={barMobile} alt="bar-mobile" />
         <div className="teamsHeading">Core Team</div>
-        <Card name="Madhav Malani" position="Overall Coordinator" img={oc} />
         <div className="div-Coordi">
+          <Card name="Madhav Malani" position="Overall Coordinator" img={oc} />
           <Card name="Amit Kumar" position="Core Member" img={ctm1} />
           <Card name="Rahul Chhabra" position="Core Member" img={ctm2} />
         </div>
