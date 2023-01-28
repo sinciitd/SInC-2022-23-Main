@@ -17,6 +17,8 @@
 .scroll_right {
   display: flex;
   flex-direction: column;
+  width: 80%; /* Total width 100% and left 20% doesn't necessarily mean right is 80%; 
+  only when here 80% was mentioned, the arrangement and orientation of the two portions on left look ordered and arranged */
 }
 .scroll_right > h3 {
   font-size: 18px;
@@ -28,10 +30,10 @@
   font-weight: 500;
   color: #ffffff;
 }
-.button_container{
+.button_container {
   display: flex;
 }
-.button{
+.button {
   border: 1px solid #ffffff;
   padding: 5px;
   border-radius: 5px;
