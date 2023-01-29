@@ -1,57 +1,52 @@
 .footer {
-    padding-left: 20px;
-    padding-right: 20px;
-    overflow: auto;
-    display: flex;
-    align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  background-color: #192d65;
+  justify-content: space-between;
 }
-.footer-icon{
-    fill: white;
-    cursor: pointer;
+.footer-icon {
+  fill: white;
+  cursor: pointer;
 }
 
 .foot-text {
-    color: white;
-    font-family: Poppins;
-    font-size: 17px;
-    line-height: 20px;
-    font-weight: 400px;
-    margin: 10px;
-
+  color: white;
+  font-family: Poppins;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 400px;
+  margin: 10px;
 }
 
 .footer-icon {
-    height: 26px;
-    width: 30px;
-    margin: 10px;
+  height: 26px;
+  width: 30px;
+  margin: 10px;
 }
 
 .footer-right {
-    flex: 3;
-    display: flex;
-    justify-content: flex-end;
-
-
+  display: flex;
+  justify-content: flex-end;
 }
 
 .footer-center {
-    flex: 6;
-    text-align: center;
-
-
+  text-align: center;
 }
 
 .footer-left {
-    flex: 3;
+  text-align: center;
 }
 
-.footer-left a{
-    text-decoration: none;
-    color: white;
+.footer-left a {
+  text-decoration: none;
+  color: white;
 }
 
 @media (orientation: portrait) {
-    .footer {
-        display: none;
-    }
+  .footer {
+    display: none;
+  }
 }
