@@ -4,6 +4,13 @@ import "./Header.css";
 import logo from "./logo.svg";
 
 const Header = () => {
+  const handleCollapse = () => {
+    var nav = document.getElementById("navbarSupportedContent");
+    var btn = document.getElementsByClassName("navbar-toggler");
+    nav.classList.remove("show");
+    btn.classList.add("collapsed");
+  };
+
   return (
     <div className="header">
       <nav className="navbar navbar-expand-lg navbar-dark bg-blue shadow">
@@ -41,6 +48,7 @@ const Header = () => {
                 className={({ isActive }) =>
                   isActive ? "nav-link nav-link-active" : "nav-link"
                 }
+                onClick={handleCollapse}
               >
                 Home
               </NavLink>
@@ -54,6 +62,7 @@ const Header = () => {
                 className={({ isActive }) =>
                   isActive ? "nav-link nav-link-active" : "nav-link"
                 }
+                onClick={handleCollapse}
               >
                 Events
               </NavLink>
@@ -67,6 +76,7 @@ const Header = () => {
                 className={({ isActive }) =>
                   isActive ? "nav-link nav-link-active" : "nav-link"
                 }
+                onClick={handleCollapse}
               >
                 About Us
               </NavLink>
@@ -81,6 +91,7 @@ const Header = () => {
                 className={({ isActive }) =>
                   isActive ? "nav-link nav-link-active" : "nav-link"
                 }
+                onClick={handleCollapse}
               >
                 Contact Us
               </NavLink>
@@ -94,6 +105,7 @@ const Header = () => {
                 className={({ isActive }) =>
                   isActive ? "nav-link nav-link-active" : "nav-link"
                 }
+                onClick={handleCollapse}
               >
                 Register
               </NavLink>

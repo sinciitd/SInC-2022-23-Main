@@ -17,20 +17,21 @@
 .scrollContainer {
   overflow-y: scroll;
 }
-div::-webkit-scrollbar{
+div::-webkit-scrollbar {
   width: 3px;
 }
 div::-webkit-scrollbar-track {
   background-color: #ffffff;
   border-radius: 1px;
 }
-div::-webkit-scrollbar-thumb{
-  background: #0E1D51;
+div::-webkit-scrollbar-thumb {
+  background: #0e1d51;
   border-radius: 1px;
   height: 2px;
 }
 
-.upArrow, .downArrow{
+.upArrow,
+.downArrow {
   color: #ffffff;
   margin-left: -150px;
 }
@@ -42,7 +43,16 @@ div::-webkit-scrollbar-thumb{
   font-size: 22px;
   font-weight: 600;
 }
-.upArrow:hover, .downArrow:hover{
-  color: #BDE3FF;
+.upArrow:hover,
+.downArrow:hover {
+  color: #bde3ff;
   cursor: pointer;
+}
+@media only screen and (max-width: 750px) {
+  .eventsLeft {
+    flex: 1;
+  }
+  .eventsRight {
+    flex: 0;
+  }
 }
