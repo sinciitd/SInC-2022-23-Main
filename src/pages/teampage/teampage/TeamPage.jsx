@@ -36,7 +36,7 @@ import exeDesign3 from "../assets/design/exe-anushka.jpg";
 import CoordiEvents1 from "../assets/events/coordi-lakshya.jpg";
 import CoordiEvents2 from "../assets/events/coordi-lakshya-chaudhary.jpg";
 // import CoordiEvents3 from "../assets/events/coordi-shlokh.jpg";
-import exeEvents1 from "../assets/events/exe-anchal.jpg";
+import exeEvents1 from "../assets/events/exe-eshita.jpg";
 import exeEvents2 from "../assets/events/exe-sanchit.jpg";
 import exeEvents3 from "../assets/events/exe-tanishq.jpg";
 import exeEvents4 from "../assets/events/exe-chinmay.jpg";
@@ -135,7 +135,7 @@ const TeamPage = () => {
             {/* <Card name="Shlok" position="Coordinator" img={CoordiEvents3} /> */}
           </div>
           <div className="div-exe">
-            <Exe name="Anchal" img={exeEvents1} />
+            <Exe name="Eshita" img={exeEvents1} />
             <Exe name="Sanchit" img={exeEvents2} />
             <Exe name="Tanishq" img={exeEvents3} />
             <Exe name="Chinmay" img={exeEvents4} />
