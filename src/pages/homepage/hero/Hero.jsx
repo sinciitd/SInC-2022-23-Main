@@ -12,11 +12,9 @@ export default function Hero() {
         <div className="heroHeading2 mx-auto mt-2">
           <div>IDEAS THAT ARE MADE TO MATTER!</div>
         </div>
-        <button className="heroReadMoreBtn mt-4">
-          <Link to="/about" className="heroReadMoreBtnText">
-            READ MORE &raquo;
-          </Link>
-        </button>
+        <Link to="/about" className="heroReadMoreBtn mt-4">
+          <span className="heroReadMoreBtnText">READ MORE &raquo;</span>
+        </Link>
       </div>
     </div>
   );
