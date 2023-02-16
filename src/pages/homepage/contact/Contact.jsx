@@ -13,60 +13,65 @@ export default function Contact() {
       </div>
       <div className="contactContents">
         <div className="contactForm">
-          <form className="row g-3">
+          <form className="row g-3" action="https://docs.google.com/forms/d/e/1FAIpQLSeTWYW8pylvja18fsJC67Mx_emSqnjXYrfmeM5s1svqTUyFVg/formResponse">
             <div className="contactFormField col-12 form-floating">
+              <label htmlFor="entry.25455436">Your Name</label>
               <input
                 type="text"
+                name="entry.25455436"
                 className="contactFormInput form-control"
-                id="cfName"
+                id="entry.25455436"
                 placeholder=" "
               />
-              <label htmlFor="cfName">Your Name</label>
             </div>
             <div className="contactFormField col-12 form-floating">
               <input
                 type="text"
                 className="contactFormInput form-control"
-                id="cfBusiness"
+                id="entry.1670574058"
+                name="entry.1670574058"
                 placeholder=" "
               />
-              <label htmlFor="cfBusiness">Nature of Business</label>
+              <label htmlFor="entry.1670574058">Nature of Business</label>
             </div>
+
             <div className="contactFormField col-lg-8 form-floating">
               <input
                 type="text"
                 className="contactFormInput form-control"
-                id="cfAddress"
-                placeholder=" "
+                id="entry.1936475182"
+                name="entry.1936475182"
+                placeholder=""
               />
-              <label htmlFor="cfAddress">Address</label>
+              <label htmlFor="entry.1936475182">Address</label>
             </div>
+
             <div className="contactFormField col-lg-4 form-floating">
               <input
                 type="text"
                 className="contactFormInput form-control"
-                id="cfPIN"
+                id="entry.1929882320"
                 placeholder=" "
               />
-              <label htmlFor="cfPIN">PIN code</label>
+              <label htmlFor="entry.1929882320">PIN code</label>
             </div>
             <div className="contactFormField col-12 form-floating">
               <input
                 type="email"
                 className="contactFormInput form-control"
-                id="cfEmail"
+                id="entry.1983097172"
                 placeholder="name@example.com"
               />
-              <label htmlFor="cfEmail">Email</label>
+              <label htmlFor="entry.1983097172">Email</label>
             </div>
             <div className="contactFormField col-12 form-floating">
               <input
                 type="tel"
                 className="contactFormInput form-control"
-                id="cfPhone"
+                id="entry.927495026"
                 placeholder="name@example.com"
               />
-              <label htmlFor="cfPhone">Contact number</label>
+              <label htmlFor="entry.927495026">Contact number</label>
             </div>
             <div className="col-12 mt-4">
               <button
@@ -90,11 +95,11 @@ export default function Contact() {
             <div className="contactNumsList">
               <div className="contactNumsItem">
                 <img src={fl} alt="contact" />
-                <span className="contactNumsItemText">+91 8827631820 (Madhav - Overall Coordinator)</span>
+                <span className="contactNumsItemText">+91 9876543210</span>
               </div>
               <div className="contactNumsItem">
                 <img src={fl} alt="contact" />
-                <span className="contactNumsItemText">+91 8824840647 (Rahul - Core Team Member)</span>
+                <span className="contactNumsItemText">+91 9876543210</span>
               </div>
             </div>
           </div>
