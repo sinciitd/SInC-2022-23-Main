@@ -5,6 +5,7 @@
     background-size: auto 100%;
     min-height: 90vh;
     padding-bottom: 50px;
+    
 }
 
 .heroContents{
@@ -24,6 +25,7 @@
     color: #FFFFFF;
     margin: auto;
     width:fit-content;
+    margin-top: -80px;
 }
 
 .heroHeading2{

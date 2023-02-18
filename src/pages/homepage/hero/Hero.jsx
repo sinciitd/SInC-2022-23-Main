@@ -15,6 +15,18 @@ export default function Hero() {
         <Link to="/about" className="heroReadMoreBtn mt-4">
           <span className="heroReadMoreBtnText">READ MORE &raquo;</span>
         </Link>
+        <Link
+          to="/expo"
+          className="heroReadMoreBtn mt-4"
+          style={{ backgroundColor: "#FFC000" }}
+        >
+          <span
+            className="heroReadMoreBtnText"
+            style={{ color: "#000000", fontWeight: "600" }}
+          >
+            STARTUP EXPO - 2023
+          </span>
+        </Link>
       </div>
     </div>
   );

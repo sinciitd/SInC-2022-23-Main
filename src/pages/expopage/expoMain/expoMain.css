@@ -1,213 +1,218 @@
-.expoMain{
-    font-family: 'Poppins';
-    font-style: normal;
-    color: #FFFFFF;
-    padding-bottom: 5rem;
+.expoMain {
+  font-family: "Poppins";
+  font-style: normal;
+  color: #ffffff;
+  padding-bottom: 5rem;
+  margin-top: 5rem !important;
 }
 
-.expoNav{
-    background-color: rgba(29, 86, 113, 0.8);
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 30px;
+.expoNav {
+  background-color: rgba(29, 86, 113, 0.8);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
 }
 
-.expoAboutTitle{
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 60px;
+#about {
+  padding-top: 50px !important;
 }
 
-.expoAboutText{
-    text-align: justify;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 35px;
+.expoAboutTitle {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
 }
 
-.expoAboutTextReadMore{
-    color: #FFFFFF;
-    font-style: italic;
-    text-decoration: underline;
-    cursor: pointer;
+.expoAboutText {
+  text-align: justify;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 35px;
 }
 
-.expoTimeline{
-    margin: 5rem 10rem;
-    padding: 5rem 12rem 4rem 6rem;
-    border: 2px solid #FFFFFF;
-    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+.expoAboutTextReadMore {
+  color: #ffffff;
+  font-style: italic;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
-.expoTimelineTitle{
-    position: relative;
-    left: 5rem;
-    font-weight: 600;
-    font-size: 50px;
-    line-height: 75px;
+.expoTimeline {
+  margin: 5rem 10rem;
+  padding: 5rem 12rem 4rem 6rem;
+  border: 2px solid #ffffff;
+  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
 }
 
-.expoTimelineText{
-    position: relative;
-    left: 5rem;
-    margin: 1rem 0;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 38px;
+.expoTimelineTitle {
+  position: relative;
+  left: 5rem;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 75px;
 }
 
-.expoTimelineTitle img{
-    position: absolute;
-    width: 40px;
-    left: -5rem;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    filter: blur(1px);
+.expoTimelineText {
+  position: relative;
+  left: 5rem;
+  margin: 1rem 0;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 38px;
 }
 
-.expoTimelineText img{
-    position: absolute;
-    top: -.5rem;
-    left: calc(18.5px - 5rem);
-    height: calc(100% + 1rem);
-    width: 3px;
-    filter: blur(1px);
+.expoTimelineTitle img {
+  position: absolute;
+  width: 40px;
+  left: -5rem;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  filter: blur(1px);
 }
 
-.vis-none{
-    visibility: hidden;
+.expoTimelineText img {
+  position: absolute;
+  top: -0.5rem;
+  left: calc(18.5px - 5rem);
+  height: calc(100% + 1rem);
+  width: 3px;
+  filter: blur(1px);
 }
 
-.expoRegisterBtn{
-    background: #192D65;
-    box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.31);
-    border-radius: 10px;
-    margin: auto;
-    width: fit-content;
-    border: 0;
+.vis-none {
+  visibility: hidden;
 }
 
-.expoRegisterBtn:hover{
-    background-color: #0d1e4f;
+.expoRegisterBtn {
+  background: #192d65;
+  box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.31);
+  border-radius: 10px;
+  margin: auto;
+  width: fit-content;
+  border: 0;
 }
 
-.expoRegisterBtnText, .expoRegisterBtnText:hover{
-    display: inline-block;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    /* font-size: 24px; */
-    line-height: 36px;
-    margin: 10px 20px;
-    color: white;
-    text-decoration: none;
+.expoRegisterBtn:hover {
+  background-color: #0d1e4f;
 }
 
+.expoRegisterBtnText,
+.expoRegisterBtnText:hover {
+  display: inline-block;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  /* font-size: 24px; */
+  line-height: 36px;
+  margin: 10px 20px;
+  color: white;
+  text-decoration: none;
+}
 
 @media (max-width: 1280px) {
-    .expoTimeline{
-        margin: 5rem 7rem;
-        padding: 4rem 8rem 2rem 5rem;
-    }
+  .expoTimeline {
+    margin: 5rem 7rem;
+    padding: 4rem 8rem 2rem 5rem;
+  }
 
-    .expoAboutText{
-        font-size: 22px;
-        line-height: 30px;
-    }
+  .expoAboutText {
+    font-size: 22px;
+    line-height: 30px;
+  }
 
-    .expoTimelineTitle{
-        font-size: 40px;
-        line-height: 60px;
-    }
+  .expoTimelineTitle {
+    font-size: 40px;
+    line-height: 60px;
+  }
 
-    .expoTimelineText{
-        font-size: 20px;
-        line-height: 30px;
-    }
+  .expoTimelineText {
+    font-size: 20px;
+    line-height: 30px;
+  }
 
-    .expoRegisterBtnText{
-        font-size: 20px;
-    }    
+  .expoRegisterBtnText {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 1024px) {
-    .expoTimeline{
-        margin: 5rem 5rem;
-        padding: 3rem 7rem 2rem 2rem;
-    }
+  .expoTimeline {
+    margin: 5rem 5rem;
+    padding: 3rem 7rem 2rem 2rem;
+  }
 
-    .expoAboutText{
-        font-size: 20px;
-        line-height: 28px;
-    }
+  .expoAboutText {
+    font-size: 20px;
+    line-height: 28px;
+  }
 
-    .expoTimelineTitle{
-        font-size: 35px;
-        line-height: 50px;
-    }
+  .expoTimelineTitle {
+    font-size: 35px;
+    line-height: 50px;
+  }
 
-    .expoTimelineText{
-        font-size: 18px;
-        line-height: 26px;
-    }
+  .expoTimelineText {
+    font-size: 18px;
+    line-height: 26px;
+  }
 
-    .expoTimelineTitle img{
-        width: 30px;
-        left: -4rem;
-    }
+  .expoTimelineTitle img {
+    width: 30px;
+    left: -4rem;
+  }
 
-    .expoTimelineText img{
-        left: calc(14px - 4rem);
-        width: 2px;
-    }
+  .expoTimelineText img {
+    left: calc(14px - 4rem);
+    width: 2px;
+  }
 
-    .expoRegisterBtnText{
-        font-size: 18px;
-    }    
+  .expoRegisterBtnText {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 768px) {
-    .expoAboutTitle{
-        font-size: 30px;
-        line-height: 40px;
-    }
-    .expoAboutText{
-        text-align: center;
-        font-size: 18px;
-        line-height: 24px;
-    }
-    .expoRegisterBtnText{
-        font-size: 15px;
-        margin: 5px 10px;
-    }    
+  .expoAboutTitle {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .expoAboutText {
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .expoRegisterBtnText {
+    font-size: 15px;
+    margin: 5px 10px;
+  }
 }
 
 @media (max-width: 600px) {
-    .expoTimeline{
-        margin: 3rem 2rem;
-        padding: 2rem 4.5rem 1rem 0rem;
-    }
+  .expoTimeline {
+    margin: 3rem 2rem;
+    padding: 2rem 4.5rem 1rem 0rem;
+  }
 
-    .expoTimelineTitle{
-        font-size: 30px;
-        line-height: 40px;
-        left: 3.5rem;
-    }
+  .expoTimelineTitle {
+    font-size: 30px;
+    line-height: 40px;
+    left: 3.5rem;
+  }
 
-    .expoTimelineText{
-        font-size: 16px;
-        line-height: 24px;
-        left: 3.5rem;
-    }
+  .expoTimelineText {
+    font-size: 16px;
+    line-height: 24px;
+    left: 3.5rem;
+  }
 
-    .expoTimelineTitle img{
-        width: 25px;
-        left: -2.5rem;
-    }
+  .expoTimelineTitle img {
+    width: 25px;
+    left: -2.5rem;
+  }
 
-    .expoTimelineText img{
-        left: calc(11px - 2.5rem);
-        width: 1.5px;
-    }
+  .expoTimelineText img {
+    left: calc(11px - 2.5rem);
+    width: 1.5px;
+  }
 }

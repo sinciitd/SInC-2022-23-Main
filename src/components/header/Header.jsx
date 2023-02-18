@@ -20,6 +20,7 @@ const Header = () => {
           src={logo}
           width="50px"
           height="50px"
+          style={{ backgroundColor: "#00094b", borderRadius: "5px" }}
         ></img>
         <Link className="navbar-brand" to="/">
           Student Incubation Cell
@@ -79,6 +80,20 @@ const Header = () => {
                 onClick={handleCollapse}
               >
                 About Us
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              {/* <Link className="nav-link" to="/about">
+                About Us
+              </Link> */}
+              <NavLink
+                to="/expo"
+                className={({ isActive }) =>
+                  isActive ? "nav-link nav-link-active" : "nav-link"
+                }
+                onClick={handleCollapse}
+              >
+                Expo
               </NavLink>
             </li>
             <div className="vertical-line"></div>
