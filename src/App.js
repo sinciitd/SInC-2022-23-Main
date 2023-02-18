@@ -6,20 +6,30 @@ import Team from "./pages/teampage/Team";
 import Contact from "./pages/homepage/contact/Contact";
 import Events from "./pages/eventspage/Events";
 import Form from "./pages/registration/Form";
+import Expo from "./pages/expopage/Expo";
 import './App.css'
+
+function ComponentWithHeaderFooter(component){
+  return(
+    <>
+      <Header />
+      {component}
+      <Footer />
+    </>
+  )
+}
 
 function App() {
   return (
     <>
-      <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<Team />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/register" element={<Form />} />
-        <Route path="/events" element={<Events />} />
+        <Route path="/"         element={ComponentWithHeaderFooter(<Home />)} />
+        <Route path="/about"    element={ComponentWithHeaderFooter(<Team />)} />
+        <Route path="/contact"  element={ComponentWithHeaderFooter(<Contact />)} />
+        <Route path="/register" element={ComponentWithHeaderFooter(<Form />)} />
+        <Route path="/events"   element={ComponentWithHeaderFooter(<Events />)} />
+        <Route path="/expo"     element={<Expo />} />
       </Routes>
-      <Footer />
     </>
   );
 }

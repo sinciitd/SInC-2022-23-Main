@@ -15,7 +15,6 @@ export default function Contact() {
         <div className="contactForm">
           <form className="row g-3" action="https://docs.google.com/forms/d/e/1FAIpQLSeTWYW8pylvja18fsJC67Mx_emSqnjXYrfmeM5s1svqTUyFVg/formResponse">
             <div className="contactFormField col-12 form-floating">
-              <label htmlFor="entry.25455436">Your Name</label>
               <input
                 type="text"
                 name="entry.25455436"
@@ -23,6 +22,7 @@ export default function Contact() {
                 id="entry.25455436"
                 placeholder=" "
               />
+              <label htmlFor="entry.25455436">Your Name</label>
             </div>
             <div className="contactFormField col-12 form-floating">
               <input
@@ -41,7 +41,7 @@ export default function Contact() {
                 className="contactFormInput form-control"
                 id="entry.1936475182"
                 name="entry.1936475182"
-                placeholder=""
+                placeholder=" "
               />
               <label htmlFor="entry.1936475182">Address</label>
             </div>
