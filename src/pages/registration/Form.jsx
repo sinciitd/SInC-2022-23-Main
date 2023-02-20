@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./form.css";
 import il from "./register-illustration.svg";
-
+import $ from 'jquery';
 export default function Form() {
   const [data, setData] = useState({ type: "STARTUP" });
   const handleChange = (e) => {
