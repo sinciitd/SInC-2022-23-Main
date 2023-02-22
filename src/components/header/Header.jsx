@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./Header.css";
 import logo from "./logo.svg";
@@ -11,18 +11,30 @@ const Header = () => {
     btn.classList.add("collapsed");
   };
 
+  const navRef = useRef();
+  const handleScroll = () => {
+    if (window.scrollY > 50) {
+      navRef.current.classList.add("navbar-scrolled");
+      navRef.current.classList.add("shadow");
+    } else {
+      navRef.current.classList.remove("navbar-scrolled");
+      navRef.current.classList.remove("shadow");
+    }
+  };
+  window.addEventListener("scroll", handleScroll);
+
   return (
     <div className="header">
-      <nav className="navbar navbar-expand-lg navbar-dark bg-blue shadow">
+      <nav ref={navRef} className="navbar navbar-expand-lg navbar-dark bg-blue">
         <img
           className="logo"
           alt="logo"
           src={logo}
           width="50px"
           height="50px"
-          style={{ backgroundColor: "#00094b", borderRadius: "5px" }}
+          // style={{ backgroundColor: "#00094b", borderRadius: "5px" }}
         ></img>
-        <Link className="navbar-brand" to="/">
+        <Link className="navbar-brand" to="/" style={{textShadow: '0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)'}}>
           Student Incubation Cell
         </Link>
         <button

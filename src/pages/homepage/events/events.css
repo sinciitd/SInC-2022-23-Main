@@ -84,11 +84,12 @@
 }
 
 .swiper-button-next, .swiper-button-prev{
-    background-color: #486DB3;
+    background-color: rgba(0,0,0,0);
+    filter: drop-shadow(0 0 3px rgb(0 0 0 / 1));
     padding: 20px;
     border-radius: 10px;
     height: 100%;
-    transform: translateY(-50%);
+    transform: translateY(-50%) scale(1.2);
     color: white;
 }
 

@@ -138,11 +138,11 @@ export default function Contact() {
             <div className="contactNumsList">
               <div className="contactNumsItem">
                 <img src={fl} alt="contact" />
-                <span className="contactNumsItemText">+91 9876543210</span>
+                <span className="contactNumsItemText"><a href='tel:+918824840647' style={{color: 'white'}}>+91 8824840647</a> (Rahul)</span>
               </div>
               <div className="contactNumsItem">
                 <img src={fl} alt="contact" />
-                <span className="contactNumsItemText">+91 9876543210</span>
+                <span className="contactNumsItemText"><a href='tel:+918827631820' style={{color: 'white'}}>+91 8827631820</a> (Madhav)</span>
               </div>
             </div>
           </div>
