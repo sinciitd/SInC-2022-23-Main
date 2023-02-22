@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Footer.css";
 import Logo from "../../Resources/logo.svg";
 import IvyCap from "../../Resources/IvyCap.png";
 
 const Footer = () => {
+  console.log(window.innerWidth);
+  useEffect(() => {}, [window.innerWidth]);
+
   return (
     <div className="footer">
       <div className="foot-text footer-left">

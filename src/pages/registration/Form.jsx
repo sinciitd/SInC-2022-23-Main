@@ -1,12 +1,84 @@
 import { useState } from "react";
 import "./form.css";
 import il from "./register-illustration.svg";
-
+import $ from "jquery";
 export default function Form() {
   const [data, setData] = useState({ type: "STARTUP" });
   const handleChange = (e) => {
     setData({ ...data, [e.target.name]: e.target.value });
+    setStartup({ ...startup, [e.target.name]: e.target.value });
+    setInvestor({ ...investor, [e.target.name]: e.target.value });
+    setStudent({ ...student, [e.target.name]: e.target.value });
   };
+
+  // Startup
+  const [startup, setStartup] = useState({
+    StartupName: "",
+    StartupSector: "",
+    StartupDescription: "",
+    StartupFounder: "",
+    StartupTeam: "",
+    StartupFoundingYear: "",
+    StartupStage: "",
+    StartupContactNumber: "",
+    StartupEmail: "",
+    StartupPitchDeck: "",
+    StartupExpectation: "",
+  });
+
+  // Investor
+  const [investor, setInvestor] = useState({
+    InvestorName: "",
+    InvestorSector: "",
+    InvestorPOC: "",
+    InvestorContactNumber: "",
+    InvestorEmail: "",
+    InvestorBrochure: "",
+  });
+
+  // Student
+  const [student, setStudent] = useState({
+    StudentName: "",
+    StudentRole: "",
+    StudentSector: "",
+    StudentResume: "",
+    StudentCoverLetter: "",
+    StudentContactNumber: "",
+    StudentEmail: "",
+    StudentExpectation: "",
+  });
+
+  const handleStartupSubmit = () => {
+    var url_submit = [
+      `e/1FAIpQLSd5R3-t-bIwx10q16-KKfqnD7ly42f_XS-YdTKQcCcXqhPDQg/formResponse`,
+      `entry.535314717=${startup.StartupName},``&entry.1090363457=${startup.StartupSector},``&entry.38898020=${startup.StartupDescription},``&entry.1338890337=${startup.StartupFounder},``&entry.1663912699=${startup.StartupTeam},``&entry.1656134199=${startup.StartupFoundingYear},``&entry.2075787728=${startup.StartupStage},``&entry.1134524373=${startup.StartupContactNumber},``&entry.1926536251=${startup.StartupEmail},``&entry.732962329=${startup.StartupPitchDeck},``&entry.1505003120=${startup.StartupExpectation},``&submit=Submit`,
+    ].join("");
+
+    $.ajax({
+      url: url_submit,
+    });
+  };
+  const handleInvestorSubmit = () => {
+    var url_submit = [
+      `https://docs.google.com/forms/d/e/1FAIpQLSdQdQun4YljCBO3TmwgA2J0FuykC1_d9kcKJ75bbWFH9GpSRQ/formResponse?usp=pp_url`,
+      `&entry.1364038763=${investor.InvestorName},``&entry.2146736065=${investor.InvestorSector},``&entry.182720934=${investor.InvestorPOC},``&entry.1922781488=${investor.InvestorContactNumber},``&entry.224186363=${investor.InvestorEmail},``&entry.1873153509=${investor.InvestorBrochure},``&submit=Submit`,
+    ].join("");
+
+    $.ajax({
+      url: url_submit,
+    });
+  };
+  const handleStudentSubmit = () => {
+    var url_submit = [
+      `https://docs.google.com/forms/d/e/1FAIpQLSf_9JqZpGDI1RRpTty_wLYICAs2oZd6owQ6u1OEI6M68HZLCw/formResponse?usp=pp_url`,
+      `&entry.695027488=${student.StudentName},``&entry.272514873=${student.StudentRole},``&entry.1518059287=${student.StudentSector},``&entry.458522211=${student.StudentResume},``&entry.1694699977=${student.StudentCoverLetter},``&entry.1503772710=${student.StudentContactNumber},``&entry.1199482170=${student.StudentEmail},``&entry.124627410=${student.StudentExpectation},``&submit=Submit`,
+    ].join("");
+
+    $.ajax({
+      url: url_submit,
+    });
+  };
+
   return (
     <div className="register" id="register">
       <div className="registerIllustration">
@@ -19,9 +91,9 @@ export default function Form() {
           <div className="registerForm mt-4">
             <div className="row g-3">
               <div className="d-flex">
-                <div class="form-check mx-1">
+                <div className="form-check mx-1">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="radio"
                     name="type"
                     id="radio1"
@@ -29,127 +101,140 @@ export default function Form() {
                     onChange={handleChange}
                     defaultChecked
                   />
-                  <label class="form-check-label" for="radio1">
+                  <label className="form-check-label" htmlFor="radio1">
                     Startup
                   </label>
                 </div>
-                <div class="form-check mx-1">
+                <div className="form-check mx-1">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="radio"
                     name="type"
                     id="radio2"
                     value="INVESTOR"
                     onChange={handleChange}
                   />
-                  <label class="form-check-label" for="radio1">
+                  <label className="form-check-label" htmlFor="radio1">
                     Investor
                   </label>
                 </div>
-                <div class="form-check mx-1">
+                <div className="form-check mx-1">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="radio"
                     name="type"
                     id="radio3"
                     value="STUDENT"
                     onChange={handleChange}
                   />
-                  <label class="form-check-label" for="radio1">
+                  <label className="form-check-label" htmlFor="radio1">
                     Student
                   </label>
                 </div>
               </div>
               {data.type === "STARTUP" && (
-                <form action="https://docs.google.com/forms/d/e/1FAIpQLSd5R3-t-bIwx10q16-KKfqnD7ly42f_XS-YdTKQcCcXqhPDQg/formResponse">
+                <form>
                   <div className="col-12 mb-2">
-                    <label htmlFor="entry.535314717">Startup Name</label>
+                    <label htmlFor="StartupName">Startup Name</label>
                     <input
                       type="text"
-                      name="entry.535314717"
+                      name="StartupName"
                       className="registerFormInput mt-2 form-control"
                       placeholder="Enter Startup Name"
+                      onChange={handleChange}
                     />
                   </div>
+
                   <div className="col-12 mb-2">
-                    <label htmlFor="entry.1090363457">Sector</label>
+                    <label htmlFor="StartupSector">Sector</label>
                     <input
                       type="text"
-                      name="entry.1090363457"
+                      name="StartupSector"
                       className="registerFormInput mt-2 form-control"
                       placeholder="Enter Sector"
+                      onChange={handleChange}
                     />
                   </div>
                   <div className="col-12 mb-2">
-                    <label htmlFor="entry.38898020">Brief Description</label>
+                    <label htmlFor="StartupDescription">
+                      Brief Description
+                    </label>
                     <input
                       type="text"
-                      name="entry.38898020"
+                      name="StartupDescription"
                       className="registerFormInput mt-2 form-control"
                       placeholder="Give a brief Description"
+                      onChange={handleChange}
                     />
                   </div>
                   <div className="col-12 mb-2">
-                    <label htmlFor="entry.1338890337">Founder's Name</label>
+                    <label htmlFor="StartupFounder">Founder's Name</label>
                     <input
                       type="text"
-                      name="entry.1338890337"
+                      name="StartupFounder"
                       className="registerFormInput mt-2 form-control"
                       placeholder="Founder"
+                      onChange={handleChange}
                     />
                   </div>
                   <div className="col-12 mb-2">
-                    <label htmlFor="entry.1663912699">Founding Team</label>
+                    <label htmlFor="StartupTeam">Founding Team</label>
                     <input
                       type="text"
-                      name="entry.1663912699"
+                      name="StartupTeam"
                       className="registerFormInput mt-2 form-control"
                       placeholder="Founding Team Members"
+                      onChange={handleChange}
                     />
                   </div>
                   <div className="col-12 mb-2">
-                    <label htmlFor="entry.1656134199">Founding year</label>
+                    <label htmlFor="FoundingYear">Founding year</label>
                     <input
                       type="text"
-                      name="entry.1656134199"
+                      name="FoundingYear"
                       className="registerFormInput mt-2 form-control"
                       placeholder="Year of Foundation"
+                      onChange={handleChange}
                     />
                   </div>
                   <div className="col-12 mb-2">
-                    <label htmlFor="entry.2075787728">Stage</label>
+                    <label htmlFor="StartupStage">Stage</label>
                     <input
                       type="text"
-                      name="entry.2075787728"
+                      name="StartupStage"
                       className="registerFormInput mt-2 form-control"
                       placeholder="Stage"
+                      onChange={handleChange}
                     />
                   </div>
                   <div className="col-12 mb-2">
-                    <label htmlFor="entry.1134524373">Contact Number</label>
+                    <label htmlFor="StartupContactNumber">Contact Number</label>
                     <input
                       type="text"
-                      name="entry.1134524373"
+                      name="StartupContactNumber"
                       className="registerFormInput mt-2 form-control"
                       placeholder="Contact Number"
+                      onChange={handleChange}
                     />
                   </div>
                   <div className="col-12 mb-2">
-                    <label htmlFor="entry.1926536251">Email</label>
+                    <label htmlFor="StartupEmail">Email</label>
                     <input
                       type="email"
-                      name="entry.1926536251"
+                      name="StartupEmail"
                       className="registerFormInput mt-2 form-control"
                       placeholder="Email"
+                      onChange={handleChange}
                     />
                   </div>
                   <div className="col-12 mb-2">
-                    <label htmlFor="entry.732962329">Pitch Deck</label>
+                    <label htmlFor="StartupPitchDeck">Pitch Deck</label>
                     <input
                       type="text"
-                      name="entry.732962329"
+                      name="StartupPitchDeck"
                       className="registerFormInput mt-2 form-control"
                       placeholder="Upload Google Drive Link and Give Access"
+                      onChange={handleChange}
                     />
                   </div>
                   {/* <div className="col-12 mb-2">
@@ -157,18 +242,22 @@ export default function Form() {
                                     <input type="file" name="pitch" className=" mt-2 form-control" placeholder="pitch" />
                                 </div> */}
                   <div className="col-12 mb-2">
-                    <label htmlFor="entry.1505003120">
+                    <label htmlFor="StartupExpectation">
                       Any Expectation from SInC?
                     </label>
                     <input
                       type="text"
-                      name="entry.1505003120"
+                      name="StartupExpectation"
                       className="registerFormInput mt-2 form-control"
                       placeholder="Expectation"
+                      onChange={handleChange}
                     />
                   </div>
                   <div className="col-12">
-                    <button type="submit" className="registerFormSubmit">
+                    <button
+                      onClick={handleStartupSubmit}
+                      className="registerFormSubmit"
+                    >
                       Register
                     </button>
                   </div>
@@ -177,57 +266,66 @@ export default function Form() {
               {data.type === "INVESTOR" && (
                 <form action="https://docs.google.com/forms/d/e/1FAIpQLSdQdQun4YljCBO3TmwgA2J0FuykC1_d9kcKJ75bbWFH9GpSRQ/formResponse">
                   <div className="col-12 mb-2">
-                    <label htmlFor="entry.1364038763">Investor Name</label>
+                    <label htmlFor="InvestorName">Investor Name</label>
                     <input
                       type="text"
-                      name="entry.1364038763"
+                      name="InvestorName"
                       className="registerFormInput mt-2 form-control"
                       placeholder="Investor Name"
                     />
                   </div>
+
                   <div className="col-12 mb-2">
-                    <label htmlFor="entry.2146736065">Sector</label>
+                    <label htmlFor="InvestorSector">Sector</label>
                     <input
                       type="text"
-                      name="entry.2146736065"
+                      name="InvestorSector"
                       className="registerFormInput mt-2 form-control"
                       placeholder="Enter Sector"
+                      onChange={handleChange}
                     />
                   </div>
+
                   <div className="col-12 mb-2">
-                    <label htmlFor="entry.182720934">Point of Contact</label>
+                    <label htmlFor="InvestorPOC">Point of Contact</label>
                     <input
                       type="text"
-                      name="entry.182720934"
+                      name="InvestorPOC"
                       className="registerFormInput mt-2 form-control"
                       placeholder="Point of Contact"
+                      onChange={handleChange}
                     />
                   </div>
                   <div className="col-12 mb-2">
-                    <label htmlFor="entry.1922781488">Contact Number</label>
+                    <label htmlFor="InvestorContactNumber">
+                      Contact Number
+                    </label>
                     <input
                       type="text"
-                      name="entry.1922781488"
+                      name="InvestorContactNumber"
                       className="registerFormInput mt-2 form-control"
                       placeholder="Contact Number"
+                      onChange={handleChange}
                     />
                   </div>
                   <div className="col-12 mb-2">
-                    <label htmlFor="entry.224186363">Email</label>
+                    <label htmlFor="InvestorEmail">Email</label>
                     <input
                       type="email"
-                      name="entry.224186363"
+                      name="InvestorEmail"
                       className="registerFormInput mt-2 form-control"
                       placeholder="Email"
+                      onChange={handleChange}
                     />
                   </div>
                   <div className="col-12 mb-2">
-                    <label htmlFor="entry.1873153509">Brochure</label>
+                    <label htmlFor="InvestorBrochure">Brochure</label>
                     <input
                       type="text"
-                      name="entry.1873153509"
+                      name="InvestorBrochure"
                       className="registerFormInput mt-2 form-control"
                       placeholder="Please upload on Google drive and give access."
+                      onChange={handleChange}
                     />
                   </div>
                   {/* <div className="col-12 mb-2">
@@ -235,39 +333,46 @@ export default function Form() {
                                     <input type="file" name="brochure" className="mt-2 form-control" placeholder="Brochure" />
                                 </div> */}
                   <div className="col-12">
-                    <button type="submit" className="registerFormSubmit">
+                    <button
+                      onClick={handleInvestorSubmit}
+                      className="registerFormSubmit"
+                    >
                       Register
                     </button>
                   </div>
                 </form>
               )}
               {data.type === "STUDENT" && (
-                <form action="https://docs.google.com/forms/d/e/1FAIpQLSf_9JqZpGDI1RRpTty_wLYICAs2oZd6owQ6u1OEI6M68HZLCw/formResponse">
+                <form>
                   <div className="col-12 mb-2">
-                    <label htmlFor="entry.695027488">Student Name</label>
+                    <label htmlFor="StudentName">Student Name</label>
                     <input
                       type="text"
-                      name="entry.695027488"
+                      name="StudentName"
                       className="registerFormInput mt-2 form-control"
                       placeholder="Student's Name"
+                      onChange={handleChange}
+                    />
+                  </div>
+
+                  <div className="col-12 mb-2">
+                    <label htmlFor="StudentRole">Role</label>
+                    <input
+                      type="text"
+                      name="StudentRole"
+                      className="registerFormInput mt-2 form-control"
+                      placeholder="Enter Sector"
+                      onChange={handleChange}
                     />
                   </div>
                   <div className="col-12 mb-2">
-                    <label htmlFor="entry.272514873">Role</label>
+                    <label htmlFor="SutdentSector">Sector</label>
                     <input
                       type="text"
-                      name="entry.272514873"
+                      name="SutdentSector"
                       className="registerFormInput mt-2 form-control"
                       placeholder="Enter Sector"
-                    />
-                  </div>
-                  <div className="col-12 mb-2">
-                    <label htmlFor="entry.1518059287">Sector</label>
-                    <input
-                      type="text"
-                      name="entry.1518059287"
-                      className="registerFormInput mt-2 form-control"
-                      placeholder="Enter Sector"
+                      onChange={handleChange}
                     />
                   </div>
                   {/* <div className="col-12 mb-2">
@@ -275,12 +380,13 @@ export default function Form() {
                                     <input type="file" name="resume" className="mt-2 form-control" />
                                 </div> */}
                   <div className="col-12 mb-2">
-                    <label htmlFor="entry.458522211">Resume</label>
+                    <label htmlFor="StudentResume">Resume</label>
                     <input
                       type="text"
-                      name="entry.458522211"
+                      name="StudentResume"
                       className="registerFormInput mt-2 form-control"
                       placeholder="Upload on Google Drive and Give Access"
+                      onChange={handleChange}
                     />
                   </div>
                   {/* <div className="col-12 mb-2">
@@ -288,45 +394,55 @@ export default function Form() {
                                     <input type="file" name="cover_letter" className="mt-2 form-control" />
                                 </div> */}
                   <div className="col-12 mb-2">
-                    <label htmlFor="entry.1694699977">Cover Letter</label>
+                    <label htmlFor="StudentCoverLetter">Cover Letter</label>
                     <input
                       type="text"
-                      name="entry.1694699977"
+                      name="StudentCoverLetter"
                       className="registerFormInput mt-2 form-control"
                       placeholder="Upload on Google Drive and Give Access"
+                      onChange={handleChange}
                     />
                   </div>
+
                   <div className="col-12 mb-2">
-                    <label htmlFor="entry.1503772710">Contact Number</label>
+                    <label htmlFor="StudentContactNumber">Contact Number</label>
                     <input
                       type="text"
-                      name="entry.1503772710"
+                      name="StudentContactNumber"
                       className="registerFormInput mt-2 form-control"
                       placeholder="Contact Number"
+                      onChange={handleChange}
                     />
                   </div>
+
                   <div className="col-12 mb-2">
-                    <label htmlFor="entry.1199482170">Email</label>
+                    <label htmlFor="StudentEmail">Email</label>
                     <input
                       type="email"
-                      name="entry.1199482170"
+                      name="StudentEmail"
                       className="registerFormInput mt-2 form-control"
                       placeholder="Email"
+                      onChange={handleChange}
                     />
                   </div>
+
                   <div className="col-12 mb-2">
-                    <label htmlFor="entry.124627410">
+                    <label htmlFor="StudentExpectation">
                       Any Expectation from SInC
                     </label>
                     <input
                       type="text"
-                      name="entry.124627410"
+                      name="StudentExpectation"
                       className="registerFormInput mt-2 form-control"
                       placeholder="Expectation"
+                      onChange={handleChange}
                     />
                   </div>
                   <div className="col-12">
-                    <button type="submit" className="registerFormSubmit">
+                    <button
+                      handleClick={handleStudentSubmit}
+                      className="registerFormSubmit"
+                    >
                       Register
                     </button>
                   </div>

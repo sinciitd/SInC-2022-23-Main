@@ -12,8 +12,8 @@ const ExpoHeader = () => {
   };
 
   return (
-    <div className="header">
-      <div className="navbar navbar-expand-lg navbar-dark bg-blue">
+    <div className="expoHeader">
+      <div className="expoNavbar navbar navbar-expand-lg navbar-dark bg-blue">
         <img
           className="logo"
           alt="logo"

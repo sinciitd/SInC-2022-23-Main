@@ -4,7 +4,7 @@
   overflow: auto;
   display: flex;
   align-items: center;
-  background-color: #192d65;
+  background-color: #0e3749;
   justify-content: space-between;
 }
 .footer-icon {
@@ -48,5 +48,15 @@
 @media (orientation: portrait) {
   .footer {
     display: none;
+  }
+}
+@media only screen and (max-width: 948px) {
+  .footer {
+    margin-top: calc(100px - 50 / 1512 * 100px);
+  }
+}
+@media only screen and (max-width: 748px) {
+  .footer {
+    margin-top: 0px;
   }
 }

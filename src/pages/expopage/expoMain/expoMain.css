@@ -85,7 +85,7 @@
 }
 
 .expoRegisterBtn {
-  background: #192d65;
+  background: #0E3749;
   box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.31);
   border-radius: 10px;
   margin: auto;
@@ -94,7 +94,7 @@
 }
 
 .expoRegisterBtn:hover {
-  background-color: #0d1e4f;
+  background-color: #082d3d;
 }
 
 .expoRegisterBtnText,

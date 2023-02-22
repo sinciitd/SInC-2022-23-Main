@@ -1,142 +1,145 @@
-.register{
-    padding-top: 100px;
-    display: flex;
-    align-items: center;
-    padding-bottom: 40px;
+.register {
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 40px;
 }
 
-.registerIllustration{
-    width: 55%;
+.registerIllustration {
+  width: 55%;
 }
 
-.registerIllustration img{
-    width: 100%;
+.registerIllustration img {
+  width: 100%;
 }
 
-.registerContents{
-    width: 45%;
+.registerContents {
+  width: 45%;
 }
 
-.registerBox{
-    border-radius: 15px;
-    background-color: #FFFFFF;
-    margin: 0 40px;
-    padding: 35px;
-    height: fit-content;
-    font-family: 'Poppins';
-    font-style: normal;
-    text-align: justify;
+.registerBox {
+  border-radius: 15px;
+  background-color: #ffffff;
+  margin: 0 40px;
+  padding: 35px;
+  height: calc(875 / 1512 * 100vw);
+  font-family: "Poppins";
+  font-style: normal;
+  text-align: justify;
+  overflow-y: scroll;
 }
 
-.registerHeading1{
-    font-weight: 300;
-    font-size: 25px;
+.registerHeading1 {
+  font-weight: 300;
+  font-size: 25px;
 }
 
-.registerHeading2{
-    font-weight: 500;
-    font-size: 31px;
+.registerHeading2 {
+  font-weight: 500;
+  font-size: 31px;
 }
 
-.registerHeading3{
-    font-weight: 400;
-    font-size: 16px;
+.registerHeading3 {
+  font-weight: 400;
+  font-size: 16px;
 }
 
-.registerFormInput{
-    height: 50px;
-    border-color: #282828;
+.registerFormInput {
+  height: 50px;
+  border-color: #282828;
 }
 
-.registerFormInput::placeholder{
-    font-size: 14px;
-    color: #ABABAB;
+.registerFormInput::placeholder {
+  font-size: 14px;
+  color: #ababab;
 }
 
-.registerFormSubmit{
-    height: 55px;
-    width: 100%;
-    background-color: black;
-    color: white;
-    border: 0;
-    border-radius: 6px;
+.registerFormSubmit {
+  height: 55px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  border: 0;
+  border-radius: 6px;
 }
 
-.registerHeading4{
-    text-align: center;
+.registerHeading4 {
+  text-align: center;
 }
 
-.registerText1{
-    font-weight: 300;
-    color: #7D7D7D;
+.registerText1 {
+  font-weight: 300;
+  color: #7d7d7d;
 }
 
-.registerText2{
-    font-weight: 600;
-    text-decoration: none;
-    color: black;
+.registerText2 {
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
 }
 
-.registerText2:hover{
-    color: black;
+.registerText2:hover {
+  color: black;
 }
 
 @media only screen and (max-width: 1024px) {
-    .registerIllustration{
-        width: 50%;
-    }
+  .registerIllustration {
+    width: 50%;
+  }
 
-    .registerContents{
-        width: 50%;
-    }
+  .registerContents {
+    width: 50%;
+  }
 
-    .registerBox{
-        margin: 0 30px;
-    }
+  .registerBox {
+    margin: 0 30px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-    .registerIllustration{
-        display: none;
-    }
+  .registerIllustration {
+    display: none;
+  }
 
-    .registerContents{
-        width: 100%;
-    }
+  .registerContents {
+    width: 100%;
+  }
 
-    .registerBox{
-        margin: 0 25px;
-    }
+  .registerBox {
+    margin: 0 25px;
+    height: fit-content;
+    overflow-y: hidden;
+  }
 
-    .registerHeading1{
-        font-size: 20px;
-    }
+  .registerHeading1 {
+    font-size: 20px;
+  }
 
-    .registerHeading2{
-        font-size: 25px;
-    }
+  .registerHeading2 {
+    font-size: 25px;
+  }
 
-    .registerHeading3{
-        font-size: 14px;
-    }
+  .registerHeading3 {
+    font-size: 14px;
+  }
 
-    .registerForm{
-        font-size: 14px;
-    }
+  .registerForm {
+    font-size: 14px;
+  }
 
-    .registerFormInput{
-        height: 40px;
-    }
+  .registerFormInput {
+    height: 40px;
+  }
 
-    .registerFormInput::placeholder{
-        font-size: 12px;
-    }
+  .registerFormInput::placeholder {
+    font-size: 12px;
+  }
 
-    .registerFormSubmit{
-        height: 40px;
-    }
+  .registerFormSubmit {
+    height: 40px;
+  }
 
-    .registerHeading4{
-        font-size: 14px;
-    }
+  .registerHeading4 {
+    font-size: 14px;
+  }
 }
