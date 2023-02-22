@@ -1,14 +1,14 @@
 import { useState } from "react";
 import "./form.css";
 import il from "./register-illustration.svg";
-import $ from 'jquery';
+import $ from "jquery";
 export default function Form() {
   const [data, setData] = useState({ type: "STARTUP" });
   const handleChange = (e) => {
     setData({ ...data, [e.target.name]: e.target.value });
-    setStartup({ ...startup, [e.target.name]: e.target.value })
-    setInvestor({ ...investor, [e.target.name]: e.target.value })
-    setStudent({ ...student, [e.target.name]: e.target.value })
+    setStartup({ ...startup, [e.target.name]: e.target.value });
+    setInvestor({ ...investor, [e.target.name]: e.target.value });
+    setStudent({ ...student, [e.target.name]: e.target.value });
   };
 
   // Startup
@@ -24,8 +24,7 @@ export default function Form() {
     StartupEmail: "",
     StartupPitchDeck: "",
     StartupExpectation: "",
-
-  })
+  });
 
   // Investor
   const [investor, setInvestor] = useState({
@@ -35,7 +34,7 @@ export default function Form() {
     InvestorContactNumber: "",
     InvestorEmail: "",
     InvestorBrochure: "",
-  })
+  });
 
   // Student
   const [student, setStudent] = useState({
@@ -47,63 +46,38 @@ export default function Form() {
     StudentContactNumber: "",
     StudentEmail: "",
     StudentExpectation: "",
-  })
+  });
 
   const handleStartupSubmit = () => {
     var url_submit = [
       `e/1FAIpQLSd5R3-t-bIwx10q16-KKfqnD7ly42f_XS-YdTKQcCcXqhPDQg/formResponse`,
-      `entry.535314717=${startup.StartupName},`
-        `&entry.1090363457=${startup.StartupSector},`
-        `&entry.38898020=${startup.StartupDescription},`
-        `&entry.1338890337=${startup.StartupFounder},`
-        `&entry.1663912699=${startup.StartupTeam},`
-        `&entry.1656134199=${startup.StartupFoundingYear},`
-        `&entry.2075787728=${startup.StartupStage},`
-        `&entry.1134524373=${startup.StartupContactNumber},`
-        `&entry.1926536251=${startup.StartupEmail},`
-        `&entry.732962329=${startup.StartupPitchDeck},`
-        `&entry.1505003120=${startup.StartupExpectation},`
-        `&submit=Submit`
+      `entry.535314717=${startup.StartupName},``&entry.1090363457=${startup.StartupSector},``&entry.38898020=${startup.StartupDescription},``&entry.1338890337=${startup.StartupFounder},``&entry.1663912699=${startup.StartupTeam},``&entry.1656134199=${startup.StartupFoundingYear},``&entry.2075787728=${startup.StartupStage},``&entry.1134524373=${startup.StartupContactNumber},``&entry.1926536251=${startup.StartupEmail},``&entry.732962329=${startup.StartupPitchDeck},``&entry.1505003120=${startup.StartupExpectation},``&submit=Submit`,
     ].join("");
 
     $.ajax({
-      url: url_submit
+      url: url_submit,
     });
-  }
+  };
   const handleInvestorSubmit = () => {
     var url_submit = [
       `https://docs.google.com/forms/d/e/1FAIpQLSdQdQun4YljCBO3TmwgA2J0FuykC1_d9kcKJ75bbWFH9GpSRQ/formResponse?usp=pp_url`,
-      `&entry.1364038763=${investor.InvestorName},`
-        `&entry.2146736065=${investor.InvestorSector},`
-        `&entry.182720934=${investor.InvestorPOC},`
-        `&entry.1922781488=${investor.InvestorContactNumber},`
-        `&entry.224186363=${investor.InvestorEmail},`
-        `&entry.1873153509=${investor.InvestorBrochure},`
-        `&submit=Submit`
+      `&entry.1364038763=${investor.InvestorName},``&entry.2146736065=${investor.InvestorSector},``&entry.182720934=${investor.InvestorPOC},``&entry.1922781488=${investor.InvestorContactNumber},``&entry.224186363=${investor.InvestorEmail},``&entry.1873153509=${investor.InvestorBrochure},``&submit=Submit`,
     ].join("");
 
     $.ajax({
-      url: url_submit
+      url: url_submit,
     });
-  }
+  };
   const handleStudentSubmit = () => {
     var url_submit = [
       `https://docs.google.com/forms/d/e/1FAIpQLSf_9JqZpGDI1RRpTty_wLYICAs2oZd6owQ6u1OEI6M68HZLCw/formResponse?usp=pp_url`,
-      `&entry.695027488=${student.StudentName},`
-        `&entry.272514873=${student.StudentRole},`
-        `&entry.1518059287=${student.StudentSector},`
-        `&entry.458522211=${student.StudentResume},`
-        `&entry.1694699977=${student.StudentCoverLetter},`
-        `&entry.1503772710=${student.StudentContactNumber},`
-        `&entry.1199482170=${student.StudentEmail},`
-        `&entry.124627410=${student.StudentExpectation},`
-        `&submit=Submit`
+      `&entry.695027488=${student.StudentName},``&entry.272514873=${student.StudentRole},``&entry.1518059287=${student.StudentSector},``&entry.458522211=${student.StudentResume},``&entry.1694699977=${student.StudentCoverLetter},``&entry.1503772710=${student.StudentContactNumber},``&entry.1199482170=${student.StudentEmail},``&entry.124627410=${student.StudentExpectation},``&submit=Submit`,
     ].join("");
 
     $.ajax({
-      url: url_submit
+      url: url_submit,
     });
-  }
+  };
 
   return (
     <div className="register" id="register">
@@ -160,7 +134,6 @@ export default function Form() {
               </div>
               {data.type === "STARTUP" && (
                 <form>
-
                   <div className="col-12 mb-2">
                     <label htmlFor="StartupName">Startup Name</label>
                     <input
@@ -183,7 +156,9 @@ export default function Form() {
                     />
                   </div>
                   <div className="col-12 mb-2">
-                    <label htmlFor="StartupDescription">Brief Description</label>
+                    <label htmlFor="StartupDescription">
+                      Brief Description
+                    </label>
                     <input
                       type="text"
                       name="StartupDescription"
@@ -279,7 +254,10 @@ export default function Form() {
                     />
                   </div>
                   <div className="col-12">
-                    <button onClick={handleStartupSubmit} className="registerFormSubmit">
+                    <button
+                      onClick={handleStartupSubmit}
+                      className="registerFormSubmit"
+                    >
                       Register
                     </button>
                   </div>
@@ -287,7 +265,6 @@ export default function Form() {
               )}
               {data.type === "INVESTOR" && (
                 <form action="https://docs.google.com/forms/d/e/1FAIpQLSdQdQun4YljCBO3TmwgA2J0FuykC1_d9kcKJ75bbWFH9GpSRQ/formResponse">
-
                   <div className="col-12 mb-2">
                     <label htmlFor="InvestorName">Investor Name</label>
                     <input
@@ -320,7 +297,9 @@ export default function Form() {
                     />
                   </div>
                   <div className="col-12 mb-2">
-                    <label htmlFor="InvestorContactNumber">Contact Number</label>
+                    <label htmlFor="InvestorContactNumber">
+                      Contact Number
+                    </label>
                     <input
                       type="text"
                       name="InvestorContactNumber"
@@ -354,15 +333,17 @@ export default function Form() {
                                     <input type="file" name="brochure" className="mt-2 form-control" placeholder="Brochure" />
                                 </div> */}
                   <div className="col-12">
-                    <button onClick={handleInvestorSubmit} className="registerFormSubmit">
+                    <button
+                      onClick={handleInvestorSubmit}
+                      className="registerFormSubmit"
+                    >
                       Register
                     </button>
                   </div>
                 </form>
               )}
               {data.type === "STUDENT" && (
-                <form >
-
+                <form>
                   <div className="col-12 mb-2">
                     <label htmlFor="StudentName">Student Name</label>
                     <input
@@ -434,7 +415,6 @@ export default function Form() {
                     />
                   </div>
 
-
                   <div className="col-12 mb-2">
                     <label htmlFor="StudentEmail">Email</label>
                     <input
@@ -459,7 +439,10 @@ export default function Form() {
                     />
                   </div>
                   <div className="col-12">
-                    <button handleClick={handleStudentSubmit} className="registerFormSubmit">
+                    <button
+                      handleClick={handleStudentSubmit}
+                      className="registerFormSubmit"
+                    >
                       Register
                     </button>
                   </div>
