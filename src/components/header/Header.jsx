@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./Header.css";
 import logo from "./logo.svg";
@@ -34,7 +34,14 @@ const Header = () => {
           height="50px"
           // style={{ backgroundColor: "#00094b", borderRadius: "5px" }}
         ></img>
-        <Link className="navbar-brand" to="/" style={{textShadow: '0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)'}}>
+        <Link
+          className="navbar-brand"
+          to="/"
+          style={{
+            textShadow:
+              "0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)",
+          }}
+        >
           Student Incubation Cell
         </Link>
         <button
