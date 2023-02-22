@@ -4,8 +4,8 @@ import Logo from "../../Resources/logo.svg";
 import IvyCap from "../../Resources/IvyCap.png";
 
 const Footer = () => {
-  console.log(window.innerWidth);
-  useEffect(() => {}, [window.innerWidth]);
+  // console.log(window.innerWidth);
+  // useEffect(() => {}, [window.innerWidth]);
 
   return (
     <div className="footer">
