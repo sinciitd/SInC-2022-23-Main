@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Footer.css";
 import Logo from "../../Resources/logo.svg";
 import IvyCap from "../../Resources/IvyCap.png";
