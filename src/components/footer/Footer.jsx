@@ -19,6 +19,7 @@ const Footer = () => {
         <img
           src={Logo}
           alt="SInC Logo"
+          className="SincLogo"
           style={{
             width: "calc(44/1440*100vw)",
             height: "calc(44/1440*100vw)",
@@ -28,6 +29,7 @@ const Footer = () => {
         <img
           src={IvyCap}
           alt="IvyCap Logo"
+          className="IvyLogo"
           style={{
             width: "calc(196/1440*100vw)",
             height: "calc(32/1440*100vw)",
