@@ -3,9 +3,8 @@ import ul from "./heading-underline-vector.svg";
 import il from "./contact-illustration.svg";
 import ph from "./phone-icon.svg";
 import fl from "./flag.svg";
-import $ from 'jquery';
+import $ from "jquery";
 import { useState } from "react";
-
 
 export default function Contact() {
   const [contact, setContact] = useState({
@@ -14,13 +13,12 @@ export default function Contact() {
     Address: "",
     Pincode: "",
     Email: "",
-    ContactNumber: ""
-  })
-
+    ContactNumber: "",
+  });
 
   const handleChange = (e) => {
-    setContact({ ...contact, [e.target.name]: e.target.value })
-  }
+    setContact({ ...contact, [e.target.name]: e.target.value });
+  };
   const submitToGoogle = () => {
     var url_submit = [
       `https://docs.google.com/forms/d/e/1FAIpQLSeTWYW8pylvja18fsJC67Mx_emSqnjXYrfmeM5s1svqTUyFVg/formResponse?usp=pp_url`,
@@ -30,14 +28,13 @@ export default function Contact() {
       `&entry.1929882320=${contact.Pincode}`,
       `&entry.1983097172=${contact.Email}`,
       `&entry.927495026=${contact.ContactNumber}`,
-      `&submit=Submit`
+      `&submit=Submit`,
     ].join("");
 
     $.ajax({
-      url: url_submit
+      url: url_submit,
     });
-
-  }
+  };
   return (
     <div className="contact" id="contact">
       <div className="contactHeading">
@@ -47,7 +44,6 @@ export default function Contact() {
       <div className="contactContents">
         <div className="contactForm">
           <form className="row g-3" onSubmit={submitToGoogle}>
-
             <div className="contactFormField col-12 form-floating">
               <label htmlFor="Name">Your Name</label>
               <input
@@ -76,7 +72,6 @@ export default function Contact() {
                 className="contactFormInput form-control"
                 onChange={handleChange}
               />
-
             </div>
 
             <div className="contactFormField col-lg-4 form-floating">
@@ -87,7 +82,6 @@ export default function Contact() {
                 className="contactFormInput form-control"
                 onChange={handleChange}
               />
-
             </div>
 
             <div className="contactFormField col-12 form-floating">
@@ -98,8 +92,6 @@ export default function Contact() {
                 className="contactFormInput form-control"
                 onChange={handleChange}
               />
-
-
             </div>
 
             <div className="contactFormField col-12 form-floating">
@@ -110,7 +102,6 @@ export default function Contact() {
                 className="contactFormInput form-control"
                 onChange={handleChange}
               />
-
             </div>
 
             <div className="col-12 mt-4">
@@ -121,9 +112,7 @@ export default function Contact() {
                 Submit
               </button>
             </div>
-
           </form>
-
         </div>
 
         <div className="contactIllustration">
@@ -138,11 +127,24 @@ export default function Contact() {
             <div className="contactNumsList">
               <div className="contactNumsItem">
                 <img src={fl} alt="contact" />
-                <span className="contactNumsItemText"><a href='tel:+918824840647' style={{color: 'white'}}>+91 8824840647</a> (Rahul)</span>
+                <span
+                  className="contactNumsItemText"
+                  style={{ fontWeight: "1000" }}
+                >
+                  <a href="tel:+918827631820" style={{ color: "white" }}>
+                    +91 8827631820
+                  </a>{" "}
+                  (Madhav)
+                </span>
               </div>
               <div className="contactNumsItem">
                 <img src={fl} alt="contact" />
-                <span className="contactNumsItemText"><a href='tel:+918827631820' style={{color: 'white'}}>+91 8827631820</a> (Madhav)</span>
+                <span className="contactNumsItemText">
+                  <a href="tel:+918824840647" style={{ color: "white" }}>
+                    +91 8824840647
+                  </a>{" "}
+                  (Rahul)
+                </span>
               </div>
             </div>
           </div>
