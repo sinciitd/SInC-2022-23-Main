@@ -1,0 +1,29 @@
+[
+    {
+        "id":1,
+        "title": "Ideation and Prototyping Session",
+        "date": "November 8, 2022",
+        "date_short": "8 Nov, 22",
+        "description": "First Edition of the Lecture Series was conducted on Ideation and Prototyping with the founder of Exobot Dynamics Mr. Munish Kumar",
+        "link": "https://www.instagram.com/p/CkryjZDIw5n/?utm_source=ig_web_copy_link",
+        "images": ["event1.png"]
+    },
+    {
+        "id":2,
+        "title": "Pitching Session",
+        "date": "August 31, 2022",
+        "date_short": "31 Aug, 22",
+        "description": "",
+        "link": "",
+        "images": ["event2.png"]
+    },
+    {
+        "id":3,
+        "title": "Zero to Hero: Lecture 2",
+        "date": "February 5, 2022",
+        "date_short": "5 Feb, 22",
+        "description": "The talk covered Fundraising Fundamentals of an early-age startup by Mr. Seemant Srivastav, who is the co-founder of Mool Innovation of Labs",
+        "link": "https://www.instagram.com/p/CZgTTcAF_no/?utm_source=ig_web_copy_link",
+        "images": ["event3.png"]
+    }
+]

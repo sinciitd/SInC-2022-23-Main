@@ -30,6 +30,7 @@ function ExpoMain() {
         <div className="expoAboutTitle pt-sm-4">
           Welcome to the Startup Expo!
         </div>
+ 
         <div className="expoAboutText px-sm-5 py-3">
           This event is designed to bring together entrepreneurs, investors, and
           innovators from around India to share ideas, network, and explore new
@@ -165,11 +166,171 @@ function ExpoMain() {
             contestants, the final decision will be of the organizing committee.
           </li>
         </div>
+
         <div className="expoTimelineTitle">
           <img src={bullet} alt="bullet" />
           <span className="vis-none">I</span>
         </div>
       </div>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Startup Name</th>
+          <th scope="col">Founder Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+        <th scope="row">0</th>
+          <td >Surface Moto</td>
+          <td>Mohd. Syed Shahabaz</td>
+        </tr>
+
+        <tr>
+            <th scope="row">1</th>
+            <td >Skets</td>
+            <td>Siddhant Bansal</td>
+        </tr>
+
+        <tr>
+            <th scope="row">2</th>
+            <td >VdoCipher Media Solutions</td>
+            <td>Subodh</td>
+        </tr>
+
+        <tr>
+            <th scope="row">3</th>
+            <td >Genesis Solution</td>
+            <td>Indrajeet Anshumali Bhushan</td>
+        </tr>
+
+        <tr>
+            <th scope="row">4</th>
+            <td >Manentia AI</td>
+            <td>Anuj Chandalia</td>
+        </tr>
+
+        <tr>
+            <th scope="row">5</th>
+            <td >Nana's Probiotics</td>
+            <td>Raj Negi</td>
+        </tr>
+
+        <tr>
+            <th scope="row">6</th>
+            <td >Eyecan</td>
+            <td>Nimish</td>
+        </tr>
+
+        <tr>
+            <th scope="row">7</th>
+            <td >Maphood</td>
+            <td>Sanil</td>
+        </tr>
+
+        <tr>
+            <th scope="row">8</th>
+            <td >Winzera</td>
+            <td>Udit Chawla</td>
+        </tr>
+
+        <tr>
+            <th scope="row">9</th>
+            <td >Tozero Sustaibable Solutions</td>
+            <td>Ajay</td>
+        </tr>
+
+        <tr>
+            <th scope="row">10</th>
+            <td >Cognecto</td>
+            <td>Rohit</td>
+        </tr>
+
+        <tr>
+            <th scope="row">11</th>
+            <td >Enthudes</td>
+            <td>Yogesh Kumar Bhanu</td>
+        </tr>
+
+        <tr>
+            <th scope="row">12</th>
+            <td >Ukhi</td>
+            <td>Vishal Vivek</td>
+        </tr>
+
+        <tr>
+            <th scope="row">13</th>
+            <td >Healthy Minds</td>
+            <td>Preshit</td>
+        </tr>
+
+        <tr>
+            <th scope="row">14</th>
+            <td >Code Young</td>
+            <td>Shailendra Young</td>
+        </tr>
+
+        <tr>
+            <th scope="row">15</th>
+            <td >Plug</td>
+            <td>Praveen</td>
+        </tr>
+
+        <tr>
+            <th scope="row">16</th>
+            <td >Sunya IAS</td>
+            <td>nan</td>
+        </tr>
+
+        <tr>
+            <th scope="row">17</th>
+            <td >TerraNext</td>
+            <td>Manish Singhal</td>
+        </tr>
+
+        <tr>
+            <th scope="row">18</th>
+            <td >Jovian</td>
+            <td>Aakash N S</td>
+        </tr>
+        <tr>
+            <th scope="row">19</th>
+            <td >Genelek</td>
+            <td>Dinesh</td>
+        </tr>
+
+        <tr>
+            <th scope="row">20</th>
+            <td >NebulArc</td>
+            <td>Alok Sharma</td>
+        </tr>
+
+        <tr>
+            <th scope="row">21</th>
+            <td >Beyobo</td>
+            <td>nan</td>
+        </tr>
+
+        <tr>
+            <th scope="row">22</th>
+            <td >DrSafeHands</td>
+            <td>Ashish Arora</td>
+        </tr>
+
+        <tr>
+            <th scope="row">23</th>
+            <td >Gabbit</td>
+            <td>Vipul Jain</td>
+        </tr>
+
+        <tr>
+            <th scope="row">24</th>
+            <td >Novae Avenue</td>
+            <td>Pradyum Gupta</td>
+        </tr>
+      </tbody>
+    </table>
       <div className="d-flex justify-content-center">
         <a
           href="https://docs.google.com/forms/d/e/1FAIpQLSez-YsCr_enwpAxf88qvncAKqWr0nhQFGVdMi9vI4m378OWHA/viewform"
