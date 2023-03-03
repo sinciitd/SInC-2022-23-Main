@@ -1,16 +1,11 @@
 import ul from "./heading-underline-vector.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
-import {
-  Navigation,
-  Pagination,
-  A11y,
-  Autoplay,
-} from "swiper";
+import { Navigation, Pagination, A11y, Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
-import data from "../../../data_expo/events.json"
+import data from "../../../data_expo/events.json";
 import "./events.css";
 
 export default function Events() {
@@ -58,9 +53,12 @@ export default function Events() {
                   }
                 >
                   <div className="card-img-top eventImg">
-                    <img src={require(`../../../data_expo/${event.images[0]}`)} alt="events" />
+                    <img
+                      src={require(`../../../data_expo/${event.images[0]}`)}
+                      alt="events"
+                      style={{ objectFit:'fill' }}
+                    />
                   </div>
-                 
                 </div>
               )}
             </SwiperSlide>

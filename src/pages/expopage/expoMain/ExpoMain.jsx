@@ -30,7 +30,7 @@ function ExpoMain() {
         <div className="expoAboutTitle pt-sm-4">
           Welcome to the Startup Expo!
         </div>
- 
+
         <div className="expoAboutText px-sm-5 py-3">
           This event is designed to bring together entrepreneurs, investors, and
           innovators from around India to share ideas, network, and explore new
@@ -172,165 +172,169 @@ function ExpoMain() {
           <span className="vis-none">I</span>
         </div>
       </div>
-    <table class="table table-bordered">
-      <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Startup Name</th>
-          <th scope="col">Founder Name</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-        <th scope="row">0</th>
-          <td >Surface Moto</td>
-          <td>Mohd. Syed Shahabaz</td>
-        </tr>
-
-        <tr>
+      <div className="startupsList">Participating Start-Ups</div>
+      <table
+        class="table table-bordered"
+        style={{ width: "95%", marginLeft: "2.5%", marginRight: "2.5%" }}
+      >
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Startup Name</th>
+            <th scope="col">Founder Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
             <th scope="row">1</th>
-            <td >Skets</td>
-            <td>Siddhant Bansal</td>
-        </tr>
+            <td>Surface Moto</td>
+            <td>Mohd. Syed Shahabaz</td>
+          </tr>
 
-        <tr>
+          <tr>
             <th scope="row">2</th>
-            <td >VdoCipher Media Solutions</td>
-            <td>Subodh</td>
-        </tr>
+            <td>Skets</td>
+            <td>Siddhant Bansal</td>
+          </tr>
 
-        <tr>
+          <tr>
             <th scope="row">3</th>
-            <td >Genesis Solution</td>
-            <td>Indrajeet Anshumali Bhushan</td>
-        </tr>
+            <td>VdoCipher Media Solutions</td>
+            <td>Subodh</td>
+          </tr>
 
-        <tr>
+          <tr>
             <th scope="row">4</th>
-            <td >Manentia AI</td>
-            <td>Anuj Chandalia</td>
-        </tr>
+            <td>Genesis Solution</td>
+            <td>Indrajeet Anshumali Bhushan</td>
+          </tr>
 
-        <tr>
+          <tr>
             <th scope="row">5</th>
-            <td >Nana's Probiotics</td>
-            <td>Raj Negi</td>
-        </tr>
+            <td>Manentia AI</td>
+            <td>Anuj Chandalia</td>
+          </tr>
 
-        <tr>
+          <tr>
             <th scope="row">6</th>
-            <td >Eyecan</td>
-            <td>Nimish</td>
-        </tr>
+            <td>Nana's Probiotics</td>
+            <td>Raj Negi</td>
+          </tr>
 
-        <tr>
+          <tr>
             <th scope="row">7</th>
-            <td >Maphood</td>
-            <td>Sanil</td>
-        </tr>
+            <td>Eyecan</td>
+            <td>Nimish</td>
+          </tr>
 
-        <tr>
+          <tr>
             <th scope="row">8</th>
-            <td >Winzera</td>
-            <td>Udit Chawla</td>
-        </tr>
+            <td>Maphood</td>
+            <td>Sanil</td>
+          </tr>
 
-        <tr>
+          <tr>
             <th scope="row">9</th>
-            <td >Tozero Sustaibable Solutions</td>
-            <td>Ajay</td>
-        </tr>
+            <td>Winzera</td>
+            <td>Udit Chawla</td>
+          </tr>
 
-        <tr>
+          <tr>
             <th scope="row">10</th>
-            <td >Cognecto</td>
-            <td>Rohit</td>
-        </tr>
+            <td>Tozero Sustaibable Solutions</td>
+            <td>Ajay</td>
+          </tr>
 
-        <tr>
+          <tr>
             <th scope="row">11</th>
-            <td >Enthudes</td>
-            <td>Yogesh Kumar Bhanu</td>
-        </tr>
+            <td>Cognecto</td>
+            <td>Rohit</td>
+          </tr>
 
-        <tr>
+          <tr>
             <th scope="row">12</th>
-            <td >Ukhi</td>
-            <td>Vishal Vivek</td>
-        </tr>
+            <td>Enthudes</td>
+            <td>Yogesh Kumar Bhanu</td>
+          </tr>
 
-        <tr>
+          <tr>
             <th scope="row">13</th>
-            <td >Healthy Minds</td>
-            <td>Preshit</td>
-        </tr>
+            <td>Ukhi</td>
+            <td>Vishal Vivek</td>
+          </tr>
 
-        <tr>
+          <tr>
             <th scope="row">14</th>
-            <td >Code Young</td>
-            <td>Shailendra Young</td>
-        </tr>
+            <td>Healthy Minds</td>
+            <td>Preshit</td>
+          </tr>
 
-        <tr>
+          <tr>
             <th scope="row">15</th>
-            <td >Plug</td>
-            <td>Praveen</td>
-        </tr>
+            <td>Code Young</td>
+            <td>Shailendra Young</td>
+          </tr>
 
-        <tr>
+          <tr>
             <th scope="row">16</th>
-            <td >Sunya IAS</td>
-            <td>nan</td>
-        </tr>
+            <td>Plug</td>
+            <td>Praveen</td>
+          </tr>
 
-        <tr>
+          <tr>
             <th scope="row">17</th>
-            <td >TerraNext</td>
-            <td>Manish Singhal</td>
-        </tr>
-
-        <tr>
-            <th scope="row">18</th>
-            <td >Jovian</td>
-            <td>Aakash N S</td>
-        </tr>
-        <tr>
-            <th scope="row">19</th>
-            <td >Genelek</td>
-            <td>Dinesh</td>
-        </tr>
-
-        <tr>
-            <th scope="row">20</th>
-            <td >NebulArc</td>
-            <td>Alok Sharma</td>
-        </tr>
-
-        <tr>
-            <th scope="row">21</th>
-            <td >Beyobo</td>
+            <td>Sunya IAS</td>
             <td>nan</td>
-        </tr>
+          </tr>
 
-        <tr>
+          <tr>
+            <th scope="row">18</th>
+            <td>TerraNext</td>
+            <td>Manish Singhal</td>
+          </tr>
+
+          <tr>
+            <th scope="row">19</th>
+            <td>Jovian</td>
+            <td>Aakash N S</td>
+          </tr>
+          <tr>
+            <th scope="row">20</th>
+            <td>Genelek</td>
+            <td>Dinesh</td>
+          </tr>
+
+          <tr>
+            <th scope="row">21</th>
+            <td>NebulArc</td>
+            <td>Alok Sharma</td>
+          </tr>
+
+          <tr>
             <th scope="row">22</th>
-            <td >DrSafeHands</td>
-            <td>Ashish Arora</td>
-        </tr>
+            <td>Beyobo</td>
+            <td>Anil Agrawal</td>
+          </tr>
 
-        <tr>
+          <tr>
             <th scope="row">23</th>
-            <td >Gabbit</td>
-            <td>Vipul Jain</td>
-        </tr>
+            <td>DrSafeHands</td>
+            <td>Ashish Arora</td>
+          </tr>
 
-        <tr>
+          <tr>
             <th scope="row">24</th>
-            <td >Novae Avenue</td>
+            <td>Gabbit</td>
+            <td>Vipul Jain</td>
+          </tr>
+
+          <tr>
+            <th scope="row">25</th>
+            <td>Novae Avenue</td>
             <td>Pradyum Gupta</td>
-        </tr>
-      </tbody>
-    </table>
+          </tr>
+        </tbody>
+      </table>
       <div className="d-flex justify-content-center">
         <a
           href="https://docs.google.com/forms/d/e/1FAIpQLSez-YsCr_enwpAxf88qvncAKqWr0nhQFGVdMi9vI4m378OWHA/viewform"
