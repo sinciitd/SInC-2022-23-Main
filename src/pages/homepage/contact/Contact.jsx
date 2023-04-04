@@ -131,8 +131,8 @@ export default function Contact() {
                   className="contactNumsItemText"
                   style={{ fontWeight: "1000" }}
                 >
-                  <a href="tel:+918827631820" style={{ color: "white" }}>
-                    +91 8827631820
+                  <a href="tel:+916261266224" style={{ color: "white" }}>
+                    +91 6261266224
                   </a>{" "}
                   (Madhav)
                 </span>
@@ -140,10 +140,10 @@ export default function Contact() {
               <div className="contactNumsItem">
                 <img src={fl} alt="contact" />
                 <span className="contactNumsItemText">
-                  <a href="tel:+918824840647" style={{ color: "white" }}>
-                    +91 8824840647
+                  <a href="tel:+917848957757" style={{ color: "white" }}>
+                    +91 7848957757
                   </a>{" "}
-                  (Rahul)
+                  (Satya)
                 </span>
               </div>
             </div>
