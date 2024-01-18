@@ -7,6 +7,7 @@ import Contact from "./pages/homepage/contact/Contact";
 import Events from "./pages/eventspage/Events";
 import Form from "./pages/registration/Form";
 import Expo from "./pages/expopage/Expo";
+import LoginForm from "./pages/loginpage/Login";
 import './App.css'
 
 function ComponentWithHeaderFooter(component){
@@ -28,6 +29,7 @@ function App() {
         <Route path="/contact"  element={ComponentWithHeaderFooter(<Contact />)} />
         <Route path="/register" element={ComponentWithHeaderFooter(<Form />)} />
         <Route path="/events"   element={ComponentWithHeaderFooter(<Events />)} />
+        <Route path="/login"    element={<LoginForm />} />
         <Route path="/expo"     element={<Expo />} />
       </Routes>
     </>
