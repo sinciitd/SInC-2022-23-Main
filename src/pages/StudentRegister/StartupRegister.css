@@ -20,7 +20,7 @@
   position: relative;
   border-radius: 40px 0 0 40px;
 }
-.student-reg-img {
+.startup-reg-img {
   position: absolute;
   top: 15%;
   left: 40%;
@@ -28,7 +28,7 @@
   width: 40%;
   height: 65%;
 }
-.student-reg-img img {
+.startup-reg-img img {
   height: 90%;
   width: 220%;
 }

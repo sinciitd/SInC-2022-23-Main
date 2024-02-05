@@ -9,7 +9,7 @@ export default function StartupRegister() {
     <div className="Student-reg-boss-container">
       <div className="student-reg-container">
         <div className="student-reg-lefthalf">
-          <div className="student-reg-img">
+          <div className="startup-reg-img">
             <img src={rocket} alt="rocket" />
           </div>
           <div className="student-reg-text">
