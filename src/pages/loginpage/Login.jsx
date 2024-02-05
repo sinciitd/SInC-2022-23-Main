@@ -46,7 +46,7 @@ const Container = styled.div`
   background-color: #fff;
   margin-inline: auto;
   display: flex;
-  max-width: 40%;
+  max-width: 70%;
   flex-direction: column;
   justify-content: center;
   align-self: center;
@@ -54,9 +54,14 @@ const Container = styled.div`
   padding: 28px 80px 28px 80px;
   margin-block: 100px;
 
-  @media (max-width: 991px) {
-    padding: 0 20px;
+  @media (max-width: 1024px) {
+    
   }
+  @media (max-width: 768px) {
+    width: 100%;
+
+    @media (max-width: 468px) {
+      max-width: 90%;
 `;
 
 const Header = styled.div`
@@ -96,8 +101,10 @@ const Subtitle = styled.div`
   white-space: nowrap;
   font: 400 18px Poppins, sans-serif;
 
-  @media (max-width: 991px) {
+  @media (max-width: 1024px) {
     white-space: initial;
+    text-align: center;
+
   }
 `;
 
@@ -136,15 +143,17 @@ const FormGroup = styled.div`
   align-items: start;
   align-self: stretch;
   margin-top: 12px;
+  @media (max-width: 768px) {
+    paddin-block: 4%;
 `;
 
 const Label = styled.label`
   color: #f00;
   font: 600 17px Poppins, sans-serif;
 
-  @media (max-width: 991px) {
-    max-width: 100%;
-  }
+
+  @media (max-width: 768px) {
+    paddin-block: 4%;
 `;
 
 const Required = styled.span`
@@ -161,10 +170,9 @@ const Input = styled.input`
   padding: 26px 60px 26px 34px;
   font: 400 17px Poppins, sans-serif;
 
-  @media (max-width: 991px) {
-    max-width: 100%;
-    padding: 0 20px;
-  }
+
+  @media (max-width: 768px) {
+    paddin-block: 4%;
 `;
 
 const Button = styled.button`
@@ -178,11 +186,9 @@ const Button = styled.button`
   padding: 20px 60px;
   font: 600 22px Poppins, sans-serif;
 
-  @media (max-width: 991px) {
-    max-width: 100%;
-    margin-top: 40px;
-    padding: 0 20px;
-  }
+
+  @media (max-width: 768px) {
+    paddin-block: 4%;
 `;
 
 const TextWrapper = styled.div`
