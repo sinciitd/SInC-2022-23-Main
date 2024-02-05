@@ -1,0 +1,17 @@
+.student-registerBox {
+    border-radius: 15px;
+    background-color: #ffffff;
+    margin: 0 40px;
+    padding: 35px;
+    height: 80vh;
+    font-family: "Poppins";
+    font-style: normal;
+    text-align: justify;
+    overflow-y: scroll;
+    z-index: -1;
+}
+.Registration-head{
+    font-weight: 500;
+    font-size: 31px;
+    text-align: center;
+}

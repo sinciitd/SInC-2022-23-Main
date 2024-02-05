@@ -8,6 +8,7 @@ import Events from "./pages/eventspage/Events";
 import Form from "./pages/registration/Form";
 import Expo from "./pages/expopage/Expo";
 import './App.css'
+import StudentRegister from "./pages/StudentRegister/StudentRegister";
 
 function ComponentWithHeaderFooter(component){
   return(
@@ -29,6 +30,7 @@ function App() {
         <Route path="/register" element={ComponentWithHeaderFooter(<Form />)} />
         <Route path="/events"   element={ComponentWithHeaderFooter(<Events />)} />
         <Route path="/expo"     element={<Expo />} />
+        <Route path="/studentregister"     element={<StudentRegister />} />
       </Routes>
     </>
   );
